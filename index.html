@@ -28,7 +28,10 @@
     <meta name="twitter:image" content="https://images.unsplash.com/photo-1584467735871-8e85353a8413?auto=format&fit=crop&w=1200&q=80" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path fill='%231b4332' d='M16 2C8 6 4 14 6 22c2 8 10 9 10 9s8-1 10-9c2-8-2-16-10-20z'/><path fill='%23c5a059' d='M16 8v16c-3-2-5-6-5-10 0-3 2-5 5-6z'/></svg>" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path fill='%232e7d32' d='M16 2C8 6 4 14 6 22c2 8 10 9 10 9s8-1 10-9c2-8-2-16-10-20z'/><path fill='%2381c784' d='M16 8v16c-3-2-5-6-5-10 0-3 2-5 5-6z'/></svg>" />
+
+    <!-- Preload Hero LCP Image -->
+    <link rel="preload" as="image" href="/hero_luxury_garden.jpg" fetchpriority="high" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -70,49 +73,50 @@
     }
     </script>
   </head>
-  <body class="bg-surface text-body font-sans antialiased selection:bg-emerald-800 selection:text-white">
-    <!-- Header & Sticky Navigation -->
-    <header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-md bg-white/90 border-b border-forest-900/5">
+  <body class="bg-[#F7FBF5] text-[#4A5D52] font-sans antialiased selection:bg-[#4CAF50] selection:text-white">
+    <!-- Header & Sticky Luxury Frosted Navigation -->
+    <header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 header-luxury-top">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         <!-- Brand Logo -->
         <a href="#home" class="flex items-center gap-3 group" aria-label="กลับสู่หน้าแรก Mint Supatida รับออกแบบจัดสวน">
-          <div class="w-11 h-11 rounded-full bg-gradient-to-br from-forest-900 to-forest-800 flex items-center justify-center text-gold shadow-md group-hover:scale-105 transition-transform duration-300">
-            <svg class="w-6 h-6 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <div class="w-11 h-11 rounded-full bg-gradient-to-br from-[#4CAF50] to-[#2E7D32] flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform duration-300 border border-[#81C784]/30">
+            <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
               <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
               <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
             </svg>
           </div>
           <div class="flex flex-col">
-            <span class="text-xl font-bold tracking-tight text-forest-950 font-serif leading-tight">
-              Mint Supatida <span class="text-emerald-700 text-base font-medium">รับออกแบบจัดสวน</span>
+            <span class="text-xl font-bold tracking-tight text-[#1C2D22] font-serif leading-tight">
+              Mint Supatida <span class="text-[#2E7D32] text-base font-medium">รับออกแบบจัดสวน</span>
             </span>
-            <span class="text-[10px] tracking-widest uppercase text-forest-800/70 font-semibold">Luxury Landscape & Garden Design</span>
+            <span class="text-[10px] tracking-widest uppercase text-[#758A7E] font-medium">Luxury Landscape & Garden Design</span>
           </div>
         </a>
 
         <!-- Desktop Navigation Links -->
         <nav class="hidden md:flex items-center gap-8" aria-label="เมนูหลัก">
-          <a href="#home" class="nav-link active text-sm font-medium text-forest-950 hover:text-emerald-700 transition-colors">หน้าแรก</a>
-          <a href="#about" class="nav-link text-sm font-medium text-forest-950/80 hover:text-emerald-700 transition-colors">เกี่ยวกับเรา</a>
-          <a href="#services" class="nav-link text-sm font-medium text-forest-950/80 hover:text-emerald-700 transition-colors">บริการ</a>
-          <a href="#portfolio" class="nav-link text-sm font-medium text-forest-950/80 hover:text-emerald-700 transition-colors">ผลงาน</a>
-          <a href="#reviews" class="nav-link text-sm font-medium text-forest-950/80 hover:text-emerald-700 transition-colors">รีวิว</a>
-          <a href="#contact" class="nav-link text-sm font-medium text-forest-950/80 hover:text-emerald-700 transition-colors">ติดต่อเรา</a>
+          <a href="#home" class="nav-link active text-sm font-medium text-[#1C2D22] hover:text-[#2E7D32] transition-colors">หน้าแรก</a>
+          <a href="#about" class="nav-link text-sm font-medium text-[#4A5D52] hover:text-[#2E7D32] transition-colors">เกี่ยวกับเรา</a>
+          <a href="#services" class="nav-link text-sm font-medium text-[#4A5D52] hover:text-[#2E7D32] transition-colors">บริการ</a>
+          <a href="#portfolio" class="nav-link text-sm font-medium text-[#4A5D52] hover:text-[#2E7D32] transition-colors">ผลงาน</a>
+          <a href="#reviews" class="nav-link text-sm font-medium text-[#4A5D52] hover:text-[#2E7D32] transition-colors">รีวิว</a>
+          <a href="#contact" class="nav-link text-sm font-medium text-[#4A5D52] hover:text-[#2E7D32] transition-colors">ติดต่อเรา</a>
         </nav>
 
         <!-- Desktop Action Buttons -->
         <div class="hidden lg:flex items-center gap-4">
-          <a href="tel:0970172072" class="flex items-center gap-2 text-xs font-semibold text-forest-900 bg-forest-50 px-3.5 py-2 rounded-full hover:bg-forest-100 transition-colors border border-forest-200">
-            <svg class="w-4 h-4 text-emerald-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:0970172072" class="flex items-center gap-2 text-xs font-semibold text-[#2E7D32] bg-white/80 hover:bg-white px-3.5 py-2 rounded-full transition-all border border-[#81C784]/40 shadow-sm backdrop-blur-md">
+            <span class="w-2 h-2 rounded-full bg-[#4CAF50] animate-pulse"></span>
+            <svg class="w-4 h-4 text-[#2E7D32]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             <span>097-017-2072</span>
           </a>
-          <button id="btn-header-quote" class="btn-primary text-xs font-medium px-5 py-2.5 rounded-full shadow-sm">
+          <button id="btn-header-quote" class="btn-primary text-xs font-medium px-5 py-2.5 rounded-full shadow-md">
             ขอใบเสนอราคา
           </button>
         </div>
 
         <!-- Mobile Menu Toggle Button -->
-        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-forest-950 hover:bg-forest-50 focus:outline-none" aria-label="เปิดเมนูบนมือถือ">
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-xl text-[#1C2D22] hover:bg-[#E8F5E9] focus:outline-none" aria-label="เปิดเมนูบนมือถือ">
           <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
@@ -123,20 +127,20 @@
       </div>
 
       <!-- Mobile Navigation Drawer -->
-      <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-xl border-b border-forest-100 px-6 py-6 transition-all duration-300 shadow-xl">
+      <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-2xl border-b border-[#81C784]/20 px-6 py-6 transition-all duration-300 shadow-xl">
         <nav class="flex flex-col gap-4">
-          <a href="#home" class="mobile-nav-link text-base font-semibold text-forest-950 py-2 border-b border-forest-50">หน้าแรก</a>
-          <a href="#about" class="mobile-nav-link text-base font-semibold text-forest-950/80 py-2 border-b border-forest-50">เกี่ยวกับเรา</a>
-          <a href="#services" class="mobile-nav-link text-base font-semibold text-forest-950/80 py-2 border-b border-forest-50">บริการของเรา</a>
-          <a href="#portfolio" class="mobile-nav-link text-base font-semibold text-forest-950/80 py-2 border-b border-forest-50">ผลงาน</a>
-          <a href="#reviews" class="mobile-nav-link text-base font-semibold text-forest-950/80 py-2 border-b border-forest-50">รีวิวลูกค้า</a>
-          <a href="#contact" class="mobile-nav-link text-base font-semibold text-forest-950/80 py-2 border-b border-forest-50">ติดต่อเรา</a>
+          <a href="#home" class="mobile-nav-link text-base font-semibold text-[#1C2D22] py-2 border-b border-[#81C784]/15 hover:text-[#2E7D32]">หน้าแรก</a>
+          <a href="#about" class="mobile-nav-link text-base font-semibold text-[#4A5D52] py-2 border-b border-[#81C784]/15 hover:text-[#2E7D32]">เกี่ยวกับเรา</a>
+          <a href="#services" class="mobile-nav-link text-base font-semibold text-[#4A5D52] py-2 border-b border-[#81C784]/15 hover:text-[#2E7D32]">บริการของเรา</a>
+          <a href="#portfolio" class="mobile-nav-link text-base font-semibold text-[#4A5D52] py-2 border-b border-[#81C784]/15 hover:text-[#2E7D32]">ผลงาน</a>
+          <a href="#reviews" class="mobile-nav-link text-base font-semibold text-[#4A5D52] py-2 border-b border-[#81C784]/15 hover:text-[#2E7D32]">รีวิวลูกค้า</a>
+          <a href="#contact" class="mobile-nav-link text-base font-semibold text-[#4A5D52] py-2 border-b border-[#81C784]/15 hover:text-[#2E7D32]">ติดต่อเรา</a>
           <div class="pt-4 flex flex-col gap-3">
-            <button id="btn-mobile-quote" class="btn-primary w-full py-3 text-center rounded-xl font-medium">
+            <button id="btn-mobile-quote" class="btn-primary w-full py-3 text-center rounded-2xl font-medium">
               ขอใบเสนอราคา
             </button>
-            <a href="tel:0970172072" class="btn-secondary w-full py-3 text-center rounded-xl font-medium flex items-center justify-center gap-2">
-              <svg class="w-4 h-4 text-forest-900" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:0970172072" class="btn-secondary w-full py-3 text-center rounded-2xl font-medium flex items-center justify-center gap-2">
+              <svg class="w-4 h-4 text-[#2E7D32]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
               <span>โทรด่วน 097-017-2072</span>
             </a>
           </div>
@@ -145,97 +149,211 @@
     </header>
 
     <!-- Main Content Area -->
-    <main class="pt-20">
-      <!-- 1. HERO SECTION -->
-      <section id="home" class="relative min-h-[92vh] flex items-center justify-center overflow-hidden bg-forest-950 text-white">
-        <!-- Background Image with Parallax / Subtle Zoom -->
-        <div class="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1584467735871-8e85353a8413?auto=format&fit=crop&w=2000&q=85" 
-            alt="Mint Supatida รับออกแบบจัดสวน สวนหรูสไตล์โมเดิร์นและสวนอังกฤษ" 
+    <main class="relative">
+      <!-- ============================================================
+           1. HERO SECTION — Fresh, Modern, Light Luxury Landscaping
+           Clean White Botanical Canvas | Soft Green Accents | Sansiri Standard
+           ============================================================ -->
+      <section
+        id="home"
+        aria-label="Hero — Luxury Landscape & Garden Design by Mint Supatida"
+        class="hero-luxury relative min-h-screen min-h-[100dvh] w-full flex items-center justify-center overflow-hidden bg-[#F7FBF5]"
+      >
+        <!-- ── Ultra-Luxury High-Res Background Image with Soft Light Overlays ── -->
+        <div class="hero-bg-container absolute inset-0 z-0 overflow-hidden">
+          <img
+            src="/hero_luxury_garden.jpg"
+            alt="Modern tropical landscape garden in front of luxury architectural residence by Mint Supatida"
             fetchpriority="high"
-            class="w-full h-full object-cover object-center scale-105 animate-subtle-zoom" 
+            loading="eager"
+            decoding="async"
+            class="hero-bg-img w-full h-full object-cover object-center scale-105 will-change-transform"
           />
-          <div class="absolute inset-0 bg-gradient-to-r from-forest-950/90 via-forest-950/70 to-forest-950/40"></div>
-          <div class="absolute inset-0 bg-gradient-to-t from-forest-950 via-transparent to-black/30"></div>
+          <!-- Multi-Stop Clean Light Botanical Overlays for Contrast & Readability -->
+          <!-- Directional light gradient for crisp editorial typography -->
+          <div class="absolute inset-0 bg-gradient-to-r from-[#F7FBF5]/95 via-[#F7FBF5]/85 to-[#F7FBF5]/45"></div>
+          <!-- Vertical bottom blend into the page canvas -->
+          <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[#F7FBF5]/30 to-[#F7FBF5]"></div>
+          <!-- Subtle soft radial diffusion -->
+          <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(247,251,245,0.4)_100%)]"></div>
         </div>
 
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 w-full">
-          <div class="max-w-3xl">
-            <!-- Badge -->
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-forest-800/80 border border-gold/40 text-gold text-xs font-semibold tracking-wide uppercase mb-6 backdrop-blur-sm animate-fade-in">
-              <span class="w-2 h-2 rounded-full bg-gold animate-pulse"></span>
-              <span>Mint Supatida รับออกแบบจัดสวน • คุณภาพระดับพรีเมียม</span>
-            </div>
-
-            <!-- Main Headline -->
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold tracking-tight text-white leading-tight mb-6 animate-fade-in-up">
-              เปลี่ยนพื้นที่ธรรมดา <br class="hidden sm:inline" />
-              <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-white to-gold">
-                ให้เป็นสวนในฝัน
-              </span>
-            </h1>
-
-            <!-- Subtitle -->
-            <p class="text-lg sm:text-xl text-stone-200 font-light leading-relaxed mb-10 max-w-2xl animate-fade-in-up delay-100">
-              ผู้เชี่ยวชาญด้านการจัดสวนครบวงจร สวนอังกฤษ ปูหญ้าเทียม ปูกระเบื้อง ปลูกต้นไม้ทุกชนิด และแก้ปัญหาโพรงดินทรุด ประณีตทุกรายละเอียด โดยคุณศุภธิดา ส้มแก้ว (มิ้น)
-            </p>
-
-            <!-- CTA Buttons -->
-            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 animate-fade-in-up delay-200">
-              <button id="btn-hero-quote" class="btn-primary text-base font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-emerald-900/50 flex items-center justify-center gap-3 group">
-                <span>ขอใบเสนอราคา</span>
-                <svg class="w-5 h-5 text-white group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-                </svg>
-              </button>
+        <!-- ── Main Content Container ── -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-28 pb-16 md:py-32 flex flex-col justify-center min-h-[100dvh]">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+            
+            <!-- ── Left Column: Editorial Headline & Actions (8 cols) ── -->
+            <div class="lg:col-span-8 flex flex-col items-start">
               
-              <a href="#portfolio" class="btn-glass text-base font-medium px-8 py-4 rounded-full flex items-center justify-center gap-2">
-                <span>ชมผลงานจริง</span>
-                <svg class="w-4 h-4 text-stone-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
-              </a>
+              <!-- Luxury Sansiri/SCG Prestige Eyebrow Pill -->
+              <div class="hero-fade-item hero-fade-1 inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[#81C784]/40 bg-white/90 backdrop-blur-md shadow-sm mb-6">
+                <span class="w-2 h-2 rounded-full bg-[#4CAF50] animate-pulse"></span>
+                <span class="text-xs font-luxury tracking-[0.2em] uppercase text-[#2E7D32] font-semibold">
+                  ARCHITECTURAL LANDSCAPE & GARDEN CRAFTSMANSHIP
+                </span>
+              </div>
+
+              <!-- Main Editorial Headline in Dark Botanical Slate -->
+              <h1 class="hero-fade-item hero-fade-2 font-serif font-bold tracking-tight text-[#1C2D22] leading-[1.15] mb-6"
+                  style="font-size: clamp(2.3rem, 4.8vw, 4.2rem);">
+                เปลี่ยนพื้นที่บ้านเดี่ยวและคฤหาสน์หรู<br/>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#2E7D32] via-[#4CAF50] to-[#2E7D32]">
+                  ให้เป็นสวนทรอปิคอลระดับมาสเตอร์พีซ
+                </span>
+              </h1>
+
+              <!-- English Subtitle for High-End Prestige -->
+              <p class="hero-fade-item hero-fade-3 text-[#2E7D32] font-luxury text-sm md:text-base tracking-[0.15em] uppercase mb-5 font-semibold">
+                Designed for Distinctive Living · Sansiri & SCG Residence Standard
+              </p>
+
+              <!-- Description in Thai -->
+              <p class="hero-fade-item hero-fade-4 text-[#4A5D52] text-base md:text-lg leading-relaxed max-w-2xl mb-8 font-normal font-sans">
+                ยกระดับสุนทรียภาพแห่งการอยู่อาศัย ด้วยบริการรับออกแบบจัดสวนครบวงจร สวนสไตล์โมเดิร์นทรอปิคอลและสวนอังกฤษ ปูหญ้าเทียมเกรดพรีเมียม ปูกระเบื้องภายนอก ปลูกต้นไม้คัดฟอร์มพิเศษ และนวัตกรรมแก้ปัญหาโพรงดินทรุดถาวร โดยทีมงานช่างผู้ประณีต
+              </p>
+
+              <!-- Large Luxury CTA Buttons -->
+              <div class="hero-fade-item hero-fade-5 flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto mb-10">
+                <!-- Primary Large CTA -->
+                <button
+                  id="btn-hero-quote"
+                  class="hero-cta-primary group relative inline-flex items-center justify-center gap-3.5 px-8 py-4 sm:py-5 rounded-full font-semibold text-white text-base md:text-lg shadow-xl transition-all duration-300 overflow-hidden"
+                  aria-label="ปรึกษาและประเมินราคาจัดสวนฟรี"
+                >
+                  <!-- Button Glow Shimmer -->
+                  <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/25 to-transparent"></div>
+                  
+                  <span class="relative z-10 flex items-center gap-2">
+                    <svg class="w-5 h-5 text-white group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                    </svg>
+                    <span>ปรึกษาและประเมินราคาฟรี</span>
+                  </span>
+                  <svg class="w-5 h-5 text-white group-hover:translate-x-1.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                  </svg>
+                </button>
+
+                <!-- Secondary Large Glass CTA -->
+                <a
+                  href="#portfolio"
+                  class="hero-cta-glass group inline-flex items-center justify-center gap-2.5 px-8 py-4 sm:py-5 rounded-full font-medium text-[#2E7D32] text-base md:text-lg border border-[#81C784]/50 bg-white/90 hover:bg-white backdrop-blur-md transition-all duration-300 hover:border-[#4CAF50] shadow-md hover:-translate-y-0.5"
+                  aria-label="ชมผลงานโครงการจัดสวนที่ผ่านมา"
+                >
+                  <svg class="w-5 h-5 text-[#2E7D32] group-hover:text-[#4CAF50] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                  </svg>
+                  <span>ชมผลงานโครงการพรีเมียม</span>
+                </a>
+              </div>
+
+              <!-- Trust Metrics & Accreditations -->
+              <div class="hero-fade-item hero-fade-6 flex flex-wrap items-center gap-4 sm:gap-6 pt-6 border-t border-[#81C784]/25 w-full max-w-2xl">
+                <!-- Rating pill -->
+                <div class="flex items-center gap-3">
+                  <div class="flex text-amber-500 text-sm">
+                    ★★★★★
+                  </div>
+                  <div class="text-xs text-[#758A7E]">
+                    <span class="font-bold text-[#1C2D22] text-sm">5.0 / 5.0</span>
+                    <span class="text-[#758A7E] block sm:inline sm:ml-1">(128+ รีวิวเจ้าของบ้านเดี่ยว)</span>
+                  </div>
+                </div>
+
+                <div class="h-4 w-px bg-[#81C784]/30 hidden sm:block"></div>
+
+                <!-- Warranty badge -->
+                <div class="flex items-center gap-2 text-xs text-[#4A5D52]">
+                  <div class="w-5 h-5 rounded-full bg-[#E8F5E9] border border-[#81C784]/40 flex items-center justify-center text-[#2E7D32] font-bold">
+                    ✓
+                  </div>
+                  <span>รับประกันผลงาน & สัญญาชัดเจน</span>
+                </div>
+
+                <div class="h-4 w-px bg-[#81C784]/30 hidden sm:block"></div>
+
+                <!-- Area coverage -->
+                <div class="flex items-center gap-2 text-xs text-[#4A5D52]">
+                  <div class="w-5 h-5 rounded-full bg-[#E8F5E9] border border-[#81C784]/40 flex items-center justify-center text-[#2E7D32]">
+                    📍
+                  </div>
+                  <span>กรุงเทพฯ และปริมณฑล</span>
+                </div>
+              </div>
+
             </div>
 
-            <!-- Trust Highlights Grid -->
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-16 pt-8 border-t border-white/15 animate-fade-in-up delay-300">
-              <div class="flex flex-col">
-                <span class="text-2xl lg:text-3xl font-bold font-serif text-gold">350+</span>
-                <span class="text-xs text-stone-300 mt-0.5">โครงการจัดสวนสำเร็จ</span>
+            <!-- ── Right Column: Sansiri/SCG Style Floating Highlights (4 cols) ── -->
+            <div class="lg:col-span-4 hidden lg:flex flex-col gap-4">
+              <!-- Premium Feature Card 1 -->
+              <div class="hero-glass-feature-card p-5 rounded-2xl bg-white/90 border border-[#81C784]/30 backdrop-blur-xl shadow-md hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 group">
+                <div class="flex items-center gap-4">
+                  <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#E8F5E9] to-white border border-[#81C784]/30 flex items-center justify-center text-[#2E7D32] shrink-0 group-hover:scale-105 transition-transform">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-[11px] font-luxury tracking-wider text-[#2E7D32] uppercase font-semibold">Residence Grade</div>
+                    <h3 class="text-sm font-bold text-[#1C2D22] font-serif">โครงการบ้านเดี่ยว & คฤหาสน์</h3>
+                    <p class="text-xs text-[#758A7E] mt-0.5 font-normal">Sansiri, SCG, Grand Bangkok Boulevard</p>
+                  </div>
+                </div>
               </div>
-              <div class="flex flex-col">
-                <span class="text-2xl lg:text-3xl font-bold font-serif text-gold">6 บริการ</span>
-                <span class="text-xs text-stone-300 mt-0.5">ครอบคลุมทุกความต้องการ</span>
+
+              <!-- Premium Feature Card 2 -->
+              <div class="hero-glass-feature-card p-5 rounded-2xl bg-white/90 border border-[#81C784]/30 backdrop-blur-xl shadow-md hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 group">
+                <div class="flex items-center gap-4">
+                  <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#E8F5E9] to-white border border-[#81C784]/30 flex items-center justify-center text-[#2E7D32] shrink-0 group-hover:scale-105 transition-transform">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-[11px] font-luxury tracking-wider text-[#2E7D32] uppercase font-semibold">Turnkey Craftsmanship</div>
+                    <h3 class="text-sm font-bold text-[#1C2D22] font-serif">300+ โครงการสำเร็จจริง</h3>
+                    <p class="text-xs text-[#758A7E] mt-0.5 font-normal">ดูแลจบครบ ไม่ทิ้งงาน คุมงบประมาณได้</p>
+                  </div>
+                </div>
               </div>
-              <div class="flex flex-col">
-                <span class="text-2xl lg:text-3xl font-bold font-serif text-gold">100%</span>
-                <span class="text-xs text-stone-300 mt-0.5">ความพึงพอใจลูกค้า</span>
-              </div>
-              <div class="flex flex-col">
-                <span class="text-2xl lg:text-3xl font-bold font-serif text-gold">1 ปี</span>
-                <span class="text-xs text-stone-300 mt-0.5">รับประกันผลงาน</span>
+
+              <!-- Premium Feature Card 3 -->
+              <div class="hero-glass-feature-card p-5 rounded-2xl bg-white/90 border border-[#81C784]/30 backdrop-blur-xl shadow-md hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 group">
+                <div class="flex items-center gap-4">
+                  <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#E8F5E9] to-white border border-[#81C784]/30 flex items-center justify-center text-[#2E7D32] shrink-0 group-hover:scale-105 transition-transform">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 3s7 3 7 8c0 6-7 10-7 10S5 17 5 11c0-5 7-8 7-8z"/>
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-[11px] font-luxury tracking-wider text-[#2E7D32] uppercase font-semibold">Structural Warranty</div>
+                    <h3 class="text-sm font-bold text-[#1C2D22] font-serif">แก้โพรงดินทรุด & ฐานราก</h3>
+                    <p class="text-xs text-[#758A7E] mt-0.5 font-normal">เทคนิคบล็อกโพรง ป้องกันดินไหลถาวร</p>
+                  </div>
+                </div>
               </div>
             </div>
+
           </div>
         </div>
 
-        <!-- Scroll Indicator -->
-        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/60 pointer-events-none">
-          <span class="text-[11px] tracking-widest uppercase">Scroll Down</span>
-          <div class="w-5 h-8 rounded-full border border-white/30 flex items-start justify-center p-1">
-            <span class="w-1.5 h-2 rounded-full bg-gold animate-bounce"></span>
+        <!-- ── Minimalist Luxury Scroll Indicator ── -->
+        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 pointer-events-none" aria-hidden="true">
+          <span class="text-[10px] tracking-[0.25em] uppercase text-[#2E7D32] font-luxury font-semibold">EXPLORE</span>
+          <div class="w-5 h-8 rounded-full border border-[#81C784]/40 bg-white/80 backdrop-blur-sm flex items-start justify-center p-1.5 shadow-sm">
+            <span class="w-1 h-2 rounded-full bg-[#4CAF50] animate-bounce"></span>
           </div>
         </div>
       </section>
 
       <!-- 2. ABOUT US SECTION -->
-      <section id="about" class="py-24 bg-surface relative overflow-hidden">
+      <section id="about" class="py-24 bg-[#F7FBF5] relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             <!-- Left Image Collage -->
             <div class="lg:col-span-6 relative">
-              <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/3]">
+              <div class="relative z-10 rounded-3xl overflow-hidden shadow-xl border-4 border-white aspect-[4/3]">
                 <img 
                   src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80" 
                   alt="Mint Supatida รับออกแบบจัดสวน คุณศุภธิดา ส้มแก้ว" 
@@ -244,56 +362,56 @@
                 />
               </div>
               <!-- Floating Card -->
-              <div class="absolute -bottom-8 -right-4 sm:-right-8 z-20 bg-white p-6 rounded-2xl shadow-xl border border-forest-100 max-w-xs backdrop-blur-md">
+              <div class="absolute -bottom-8 -right-4 sm:-right-8 z-20 bg-white p-6 rounded-2xl shadow-xl border border-[#81C784]/25 max-w-xs backdrop-blur-md">
                 <div class="flex items-center gap-4">
-                  <div class="w-12 h-12 rounded-xl bg-forest-900 text-gold flex items-center justify-center font-serif text-xl font-bold">
+                  <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#4CAF50] to-[#2E7D32] text-white flex items-center justify-center font-serif text-xl font-bold shadow-sm">
                     M
                   </div>
                   <div>
-                    <h4 class="font-bold text-forest-950 text-sm">คุณมิ้น ศุภธิดา</h4>
-                    <p class="text-xs text-forest-800/70">ดูแลหน้างานและใส่ใจทุกขั้นตอน</p>
+                    <h4 class="font-bold text-[#1C2D22] text-sm">คุณมิ้น ศุภธิดา</h4>
+                    <p class="text-xs text-[#4A5D52]">ดูแลหน้างานและใส่ใจทุกขั้นตอน</p>
                   </div>
                 </div>
               </div>
               <!-- Decorative background element -->
-              <div class="absolute -top-6 -left-6 w-48 h-48 bg-emerald-100/60 rounded-full blur-3xl -z-10"></div>
+              <div class="absolute -top-6 -left-6 w-48 h-48 bg-[#E8F5E9] rounded-full blur-3xl -z-10"></div>
             </div>
 
             <!-- Right Content -->
             <div class="lg:col-span-6">
-              <div class="inline-flex items-center gap-2 text-emerald-800 text-xs font-bold uppercase tracking-widest mb-3">
-                <span class="w-6 h-px bg-emerald-700"></span>
+              <div class="inline-flex items-center gap-2 text-[#2E7D32] text-xs font-bold uppercase tracking-widest mb-3">
+                <span class="w-6 h-px bg-[#4CAF50]"></span>
                 <span>เกี่ยวกับเรา (About Mint Supatida)</span>
               </div>
-              <h2 class="text-3xl sm:text-4xl font-bold font-serif text-forest-950 leading-tight mb-6">
+              <h2 class="text-3xl sm:text-4xl font-bold font-serif text-[#1C2D22] leading-tight mb-6">
                 ใส่ใจในความสวยงาม แข็งแรง และปลอดภัย <br class="hidden sm:inline" />
-                <span class="text-emerald-800">เพื่อบ้านที่คุณรักในทุกวัน</span>
+                <span class="text-[#2E7D32]">เพื่อบ้านที่คุณรักในทุกวัน</span>
               </h2>
-              <p class="text-forest-900/80 leading-relaxed mb-6 font-light text-base sm:text-lg">
+              <p class="text-[#4A5D52] leading-relaxed mb-6 font-normal text-base sm:text-lg">
                 <strong>Mint Supatida รับออกแบบจัดสวน</strong> โดย <strong>คุณศุภธิดา ส้มแก้ว (มิ้น)</strong> เรามุ่งมั่นเปลี่ยนพื้นที่รอบบ้านของคุณให้เป็นสวนพักผ่อนอันร่มรื่น สวยงาม มีสไตล์ และใช้งานได้จริงในชีวิตประจำวัน
               </p>
-              <p class="text-forest-900/70 leading-relaxed mb-8 text-sm sm:text-base">
+              <p class="text-[#758A7E] leading-relaxed mb-8 text-sm sm:text-base">
                 เราให้บริการอย่างครบวงจร ไม่ว่าคุณจะฝันถึง <strong>สวนอังกฤษแสนโรแมนติก</strong>, ต้องการ <strong>ปูหญ้าเทียมคุณภาพสูง</strong> ที่ดูแลง่าย ไร้โคลนเลอะ, งาน <strong>ปูกระเบื้องลานพักผ่อน</strong> ที่แข็งแรงได้ระนาบ, การ <strong>ปลูกไม้ล้อมฟอร์มสวย</strong> เสริมสิริมงคล ตลอดจนการ <strong>แก้ปัญหาโพรงดินทรุดรอบบ้าน</strong> เพื่อความปลอดภัยจากสัตว์มีพิษอย่างแท้จริง
               </p>
 
               <!-- Values / Badges -->
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-forest-200/60">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-[#81C784]/25">
                 <div class="flex items-start gap-3">
-                  <div class="w-8 h-8 rounded-full bg-emerald-50 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  <div class="w-8 h-8 rounded-full bg-[#E8F5E9] text-[#2E7D32] flex items-center justify-center shrink-0 mt-0.5 font-bold">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                   </div>
                   <div>
-                    <h4 class="font-semibold text-forest-950 text-sm">บริการจริงใจ ตรงเวลา</h4>
-                    <p class="text-xs text-forest-800/70">ประเมินราคาตามจริง ไม่มีบวกเพิ่ม</p>
+                    <h4 class="font-semibold text-[#1C2D22] text-sm">บริการจริงใจ ตรงเวลา</h4>
+                    <p class="text-xs text-[#758A7E]">ประเมินราคาตามจริง ไม่มีบวกเพิ่ม</p>
                   </div>
                 </div>
                 <div class="flex items-start gap-3">
-                  <div class="w-8 h-8 rounded-full bg-emerald-50 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  <div class="w-8 h-8 rounded-full bg-[#E8F5E9] text-[#2E7D32] flex items-center justify-center shrink-0 mt-0.5 font-bold">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                   </div>
                   <div>
-                    <h4 class="font-semibold text-forest-950 text-sm">งานประณีต เก็บงานสะอาด</h4>
-                    <p class="text-xs text-forest-800/70">ทีมช่างประสบการณ์สูง รับประกันงาน</p>
+                    <h4 class="font-semibold text-[#1C2D22] text-sm">งานประณีต เก็บงานสะอาด</h4>
+                    <p class="text-xs text-[#758A7E]">ทีมช่างประสบการณ์สูง รับประกันงาน</p>
                   </div>
                 </div>
               </div>
@@ -303,9 +421,9 @@
           <!-- 4-Step Process -->
           <div class="mt-24">
             <div class="text-center max-w-2xl mx-auto mb-16">
-              <span class="text-emerald-800 text-xs font-bold uppercase tracking-widest">Our Working Process</span>
-              <h3 class="text-2xl sm:text-3xl font-bold font-serif text-forest-950 mt-2">4 ขั้นตอนสู่สวนสวยสมบูรณ์แบบ</h3>
-              <p class="text-forest-900/70 text-sm mt-3">กระบวนการทำงานมาตรฐาน ชัดเจน ตรงไปตรงมา ส่งมอบงานตามนัดหมาย</p>
+              <span class="text-[#2E7D32] text-xs font-bold uppercase tracking-widest">Our Working Process</span>
+              <h3 class="text-2xl sm:text-3xl font-bold font-serif text-[#1C2D22] mt-2">4 ขั้นตอนสู่สวนสวยสมบูรณ์แบบ</h3>
+              <p class="text-[#758A7E] text-sm mt-3">กระบวนการทำงานมาตรฐาน ชัดเจน ตรงไปตรงมา ส่งมอบงานตามนัดหมาย</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="work-steps-container">
@@ -315,21 +433,21 @@
         </div>
       </section>
 
-      <!-- 3. SERVICES SECTION -->
-      <section id="services" class="py-24 bg-forest-950 text-white relative">
+      <!-- 3. SERVICES SECTION — Clean White Botanical Canvas -->
+      <section id="services" class="py-24 bg-[#F7FBF5] text-[#1C2D22] relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
             <div>
-              <div class="inline-flex items-center gap-2 text-gold text-xs font-bold uppercase tracking-widest mb-3">
-                <span class="w-6 h-px bg-gold"></span>
+              <div class="inline-flex items-center gap-2 text-[#2E7D32] text-xs font-bold uppercase tracking-widest mb-3">
+                <span class="w-6 h-px bg-[#4CAF50]"></span>
                 <span>บริการของเรา (Our Services)</span>
               </div>
-              <h2 class="text-3xl sm:text-4xl font-bold font-serif text-white">
+              <h2 class="text-3xl sm:text-4xl font-bold font-serif text-[#1C2D22]">
                 บริการออกแบบและจัดสวนครบวงจร <br class="hidden sm:inline" />
-                <span class="text-emerald-400">ตอบโจทย์ทุกความต้องการรอบบ้าน</span>
+                <span class="text-[#2E7D32]">ตอบโจทย์ทุกความต้องการรอบบ้าน</span>
               </h2>
             </div>
-            <p class="text-stone-300 font-light max-w-md text-sm sm:text-base">
+            <p class="text-[#4A5D52] font-normal max-w-md text-sm sm:text-base">
               ครอบคลุมทั้งงานจัดสวนอังกฤษ หญ้าเทียม ปูกระเบื้อง ลงต้นไม้ และแก้โพรงดินทรุด โดยทีมงานมืออาชีพที่มีความชำนาญเฉพาะทาง
             </p>
           </div>
@@ -340,14 +458,14 @@
           </div>
 
           <!-- Service CTA Banner -->
-          <div class="mt-16 p-8 md:p-10 rounded-2xl bg-gradient-to-r from-forest-900 to-forest-800 border border-forest-700/60 flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl">
+          <div class="mt-16 p-8 md:p-10 rounded-3xl bg-gradient-to-r from-[#E8F5E9] via-white to-[#E8F5E9] border border-[#81C784]/30 flex flex-col md:flex-row items-center justify-between gap-6 shadow-lg">
             <div>
-              <h4 class="text-xl font-bold text-white font-serif">สนใจบริการใด หรือต้องการปรึกษาคุณมิ้นโดยตรง?</h4>
-              <p class="text-stone-300 text-sm mt-1">ส่งรูปหน้างานเพื่อประเมินราคาและรับคำแนะนำเบื้องต้นฟรี ไม่มีค่าใช้จ่าย</p>
+              <h4 class="text-xl font-bold text-[#1C2D22] font-serif">สนใจบริการใด หรือต้องการปรึกษาคุณมิ้นโดยตรง?</h4>
+              <p class="text-[#4A5D52] text-sm mt-1">ส่งรูปหน้างานเพื่อประเมินราคาและรับคำแนะนำเบื้องต้นฟรี ไม่มีค่าใช้จ่าย</p>
             </div>
             <div class="flex items-center gap-3">
               <a href="tel:0970172072" class="btn-secondary whitespace-nowrap px-6 py-3.5 rounded-full font-semibold text-sm flex items-center gap-2">
-                <svg class="w-4 h-4 text-forest-900" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <svg class="w-4 h-4 text-[#2E7D32]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 <span>โทร 097-017-2072</span>
               </a>
               <button id="btn-services-consult" class="btn-primary whitespace-nowrap px-6 py-3.5 rounded-full font-semibold text-sm">
@@ -362,15 +480,15 @@
       <section id="portfolio" class="py-24 bg-white relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center max-w-3xl mx-auto mb-16">
-            <div class="inline-flex items-center gap-2 text-emerald-800 text-xs font-bold uppercase tracking-widest mb-3">
-              <span class="w-6 h-px bg-emerald-700"></span>
+            <div class="inline-flex items-center gap-2 text-[#2E7D32] text-xs font-bold uppercase tracking-widest mb-3">
+              <span class="w-6 h-px bg-[#4CAF50]"></span>
               <span>ผลงานแห่งความภาคภูมิใจ (Completed Projects)</span>
-              <span class="w-6 h-px bg-emerald-700"></span>
+              <span class="w-6 h-px bg-[#4CAF50]"></span>
             </div>
-            <h2 class="text-3xl sm:text-4xl font-bold font-serif text-forest-950 mb-4">
+            <h2 class="text-3xl sm:text-4xl font-bold font-serif text-[#1C2D22] mb-4">
               ชมภาพผลงานจริงที่ส่งมอบเรียบร้อยแล้ว
             </h2>
-            <p class="text-forest-900/70 text-base">
+            <p class="text-[#4A5D52] text-base">
               ผลงานจัดสวนอังกฤษ สวนโมเดิร์น งานปูหญ้าเทียม ปูกระเบื้อง ปลูกไม้ล้อม และแก้งานดินทรุดทั่วกรุงเทพฯ และปริมณฑล
             </p>
           </div>
@@ -378,18 +496,18 @@
           <!-- INTERACTIVE BEFORE & AFTER SLIDER COMPONENT -->
           <div class="mb-20">
             <div class="text-center mb-6">
-              <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-semibold">Interactive Showcase</span>
-              <h3 class="text-xl sm:text-2xl font-bold text-forest-950 font-serif mt-2">
+              <span class="px-3 py-1 rounded-full bg-[#E8F5E9] text-[#2E7D32] text-xs font-semibold">Interactive Showcase</span>
+              <h3 class="text-xl sm:text-2xl font-bold text-[#1C2D22] font-serif mt-2">
                 เปรียบเทียบ ก่อน - หลัง การปรับปรุงสวน (Before & After)
               </h3>
-              <p class="text-xs sm:text-sm text-forest-900/60 mt-1">
+              <p class="text-xs sm:text-sm text-[#758A7E] mt-1">
                 ลากแถบตรงกลางเพื่อดูความเปลี่ยนแปลงจากพื้นที่ดินทรุดรกร้าง สู่สวนสวยสไตล์อังกฤษและลานหญ้าเทียมพรีเมียม
               </p>
             </div>
 
             <!-- Slider Wrapper -->
             <div class="max-w-4xl mx-auto">
-              <div id="before-after-container" class="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-2xl border-4 border-white select-none cursor-ew-resize">
+              <div id="before-after-container" class="relative w-full aspect-[16/9] rounded-3xl overflow-hidden shadow-xl border-4 border-white select-none cursor-ew-resize">
                 <!-- After Image (Full background) -->
                 <img 
                   id="after-image" 
@@ -398,7 +516,7 @@
                   class="absolute inset-0 w-full h-full object-cover pointer-events-none" 
                   loading="lazy"
                 />
-                <div class="absolute top-4 right-4 z-10 px-3.5 py-1.5 rounded-lg bg-forest-950/80 backdrop-blur-md text-white text-xs font-semibold tracking-wide border border-white/20">
+                <div class="absolute top-4 right-4 z-10 px-3.5 py-1.5 rounded-xl bg-white/90 backdrop-blur-md text-[#1C2D22] text-xs font-semibold tracking-wide border border-[#81C784]/40 shadow-sm">
                   หลังจัดสวนเสร็จ (After)
                 </div>
 
@@ -410,15 +528,15 @@
                     class="absolute inset-0 w-full h-full object-cover" 
                     loading="lazy"
                   />
-                  <div class="absolute top-4 left-4 z-10 px-3.5 py-1.5 rounded-lg bg-black/70 backdrop-blur-md text-white text-xs font-semibold tracking-wide border border-white/20">
+                  <div class="absolute top-4 left-4 z-10 px-3.5 py-1.5 rounded-xl bg-white/90 backdrop-blur-md text-[#1C2D22] text-xs font-semibold tracking-wide border border-[#81C784]/40 shadow-sm">
                     ก่อนทำ (Before)
                   </div>
                 </div>
 
                 <!-- Slider Handle Line -->
-                <div id="slider-handle" class="absolute top-0 bottom-0 z-20 w-1 bg-white cursor-ew-resize shadow-2xl" style="left: 50%;">
-                  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white text-forest-900 shadow-xl flex items-center justify-center border-2 border-emerald-700">
-                    <svg class="w-5 h-5 text-emerald-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                <div id="slider-handle" class="absolute top-0 bottom-0 z-20 w-1 bg-white cursor-ew-resize shadow-xl" style="left: 50%;">
+                  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white text-[#2E7D32] shadow-xl flex items-center justify-center border-2 border-[#4CAF50]">
+                    <svg class="w-5 h-5 text-[#2E7D32]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M8 9l-4 3 4 3m8-6l4 3-4 3"/>
                     </svg>
                   </div>
@@ -426,9 +544,9 @@
               </div>
 
               <!-- Project Caption -->
-              <div class="mt-4 p-4 rounded-xl bg-forest-50/60 border border-forest-100 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs sm:text-sm text-forest-950">
+              <div class="mt-4 p-4 rounded-2xl bg-[#F7FBF5] border border-[#81C784]/25 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs sm:text-sm text-[#1C2D22]">
                 <span class="font-semibold">โครงการ: บ้านเดี่ยว บุราสิริ กรุงเทพฯ</span>
-                <span class="text-forest-800/70">แก้ปัญหาโพรงดินทรุดรอบบ้าน + ปูหญ้าเทียมพรีเมียม + ปลูกต้นไม้ใหญ่ และปูกระเบื้องทางเดิน</span>
+                <span class="text-[#4A5D52]">แก้ปัญหาโพรงดินทรุดรอบบ้าน + ปูหญ้าเทียมพรีเมียม + ปลูกต้นไม้ใหญ่ และปูกระเบื้องทางเดิน</span>
               </div>
             </div>
           </div>
@@ -463,27 +581,27 @@
       </section>
 
       <!-- 5. REVIEWS SECTION -->
-      <section id="reviews" class="py-24 bg-surface relative overflow-hidden">
+      <section id="reviews" class="py-24 bg-[#F7FBF5] relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center max-w-3xl mx-auto mb-16">
-            <div class="inline-flex items-center gap-2 text-emerald-800 text-xs font-bold uppercase tracking-widest mb-3">
-              <span class="w-6 h-px bg-emerald-700"></span>
+            <div class="inline-flex items-center gap-2 text-[#2E7D32] text-xs font-bold uppercase tracking-widest mb-3">
+              <span class="w-6 h-px bg-[#4CAF50]"></span>
               <span>ความประทับใจจากลูกค้า (Customer Reviews)</span>
-              <span class="w-6 h-px bg-emerald-700"></span>
+              <span class="w-6 h-px bg-[#4CAF50]"></span>
             </div>
-            <h2 class="text-3xl sm:text-4xl font-bold font-serif text-forest-950 mb-4">
+            <h2 class="text-3xl sm:text-4xl font-bold font-serif text-[#1C2D22] mb-4">
               เสียงตอบรับ 5 ดาว จากเจ้าของบ้านตัวจริง
             </h2>
             <div class="flex items-center justify-center gap-2 mt-4">
-              <div class="flex text-amber-400">
+              <div class="flex text-amber-500">
                 <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                 <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                 <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                 <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                 <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
               </div>
-              <span class="text-forest-950 font-bold text-sm">5.0 / 5.0</span>
-              <span class="text-xs text-forest-800/70">(การันตีความพึงพอใจจากลูกค้าจริง)</span>
+              <span class="text-[#1C2D22] font-bold text-sm">5.0 / 5.0</span>
+              <span class="text-xs text-[#758A7E]">(การันตีความพึงพอใจจากลูกค้าจริง)</span>
             </div>
           </div>
 
@@ -495,8 +613,8 @@
           <!-- FAQ Accordion -->
           <div class="mt-20 max-w-3xl mx-auto">
             <div class="text-center mb-10">
-              <h3 class="text-xl sm:text-2xl font-bold font-serif text-forest-950">คำถามที่พบบ่อย (FAQ)</h3>
-              <p class="text-xs sm:text-sm text-forest-900/60 mt-1">ข้อสงสัยเกี่ยวกับการจัดสวนอังกฤษ หญ้าเทียม ปูกระเบื้อง และแก้โพรงดินทรุด</p>
+              <h3 class="text-xl sm:text-2xl font-bold font-serif text-[#1C2D22]">คำถามที่พบบ่อย (FAQ)</h3>
+              <p class="text-xs sm:text-sm text-[#758A7E] mt-1">ข้อสงสัยเกี่ยวกับการจัดสวนอังกฤษ หญ้าเทียม ปูกระเบื้อง และแก้โพรงดินทรุด</p>
             </div>
             <div class="space-y-4" id="faq-container">
               <!-- Rendered dynamically by main.js -->
@@ -509,15 +627,15 @@
       <section id="contact" class="py-24 bg-white relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center max-w-3xl mx-auto mb-16">
-            <div class="inline-flex items-center gap-2 text-emerald-800 text-xs font-bold uppercase tracking-widest mb-3">
-              <span class="w-6 h-px bg-emerald-700"></span>
+            <div class="inline-flex items-center gap-2 text-[#2E7D32] text-xs font-bold uppercase tracking-widest mb-3">
+              <span class="w-6 h-px bg-[#4CAF50]"></span>
               <span>ติดต่อเรา & ขอใบเสนอราคา (Contact Mint Supatida)</span>
-              <span class="w-6 h-px bg-emerald-700"></span>
+              <span class="w-6 h-px bg-[#4CAF50]"></span>
             </div>
-            <h2 class="text-3xl sm:text-4xl font-bold font-serif text-forest-950 mb-4">
+            <h2 class="text-3xl sm:text-4xl font-bold font-serif text-[#1C2D22] mb-4">
               ติดต่อปรึกษาคุณมิ้น ศุภธิดา ได้ทันที
             </h2>
-            <p class="text-forest-900/70 text-base">
+            <p class="text-[#4A5D52] text-base">
               ส่งรูปหน้างาน ปรึกษาแนวคิดการจัดสวน หรือขอรับใบเสนอราคาเบื้องต้นฟรีได้ทุกวัน
             </p>
           </div>
@@ -526,73 +644,73 @@
             <!-- Contact Info & Channels (Col 5) -->
             <div class="lg:col-span-5 flex flex-col justify-between">
               <div>
-                <h3 class="text-xl font-bold font-serif text-forest-950 mb-6">ช่องทางการติดต่อตรง</h3>
+                <h3 class="text-xl font-bold font-serif text-[#1C2D22] mb-6">ช่องทางการติดต่อตรง</h3>
                 
                 <!-- Phone -->
-                <div class="flex items-start gap-4 p-5 rounded-xl bg-surface border border-forest-100 mb-4 hover:border-emerald-700/40 transition-colors">
-                  <div class="w-12 h-12 rounded-xl bg-forest-900 text-gold flex items-center justify-center shrink-0">
+                <div class="flex items-start gap-4 p-5 rounded-2xl bg-[#F7FBF5] border border-[#81C784]/25 mb-4 hover:border-[#4CAF50]/50 transition-colors shadow-sm">
+                  <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#4CAF50] to-[#2E7D32] text-white flex items-center justify-center shrink-0 shadow-sm">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
                   </div>
                   <div>
-                    <span class="text-xs text-forest-800/70 block uppercase font-medium">โทรศัพท์สายตรง (Phone)</span>
-                    <a href="tel:0970172072" class="text-xl font-bold text-forest-950 hover:text-emerald-700 font-serif">
+                    <span class="text-xs text-[#2E7D32] block uppercase font-semibold">โทรศัพท์สายตรง (Phone)</span>
+                    <a href="tel:0970172072" class="text-xl font-bold text-[#1C2D22] hover:text-[#2E7D32] font-serif">
                       097-017-2072
                     </a>
-                    <span class="text-xs text-forest-900/60 block mt-0.5">คุณศุภธิดา ส้มแก้ว (มิ้น) ยินดีให้คำปรึกษาทุกวัน 08:00 - 19:00 น.</span>
+                    <span class="text-xs text-[#758A7E] block mt-0.5">คุณศุภธิดา ส้มแก้ว (มิ้น) ยินดีให้คำปรึกษาทุกวัน 08:00 - 19:00 น.</span>
                   </div>
                 </div>
 
                 <!-- LINE -->
-                <div class="flex items-start gap-4 p-5 rounded-xl bg-surface border border-forest-100 mb-4 hover:border-emerald-700/40 transition-colors">
-                  <div class="w-12 h-12 rounded-xl bg-[#06C755] text-white flex items-center justify-center shrink-0 shadow-sm">
+                <div class="flex items-start gap-4 p-5 rounded-2xl bg-[#F7FBF5] border border-[#81C784]/25 mb-4 hover:border-[#4CAF50]/50 transition-colors shadow-sm">
+                  <div class="w-12 h-12 rounded-2xl bg-[#06C755] text-white flex items-center justify-center shrink-0 shadow-sm">
                     <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
                       <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.499.254l2.462 3.33v-2.95c0-.348.279-.63.63-.63.348 0 .626.282.626.63v4.764zm-5.69-4.135c0 .345-.28.63-.628.63H7.582v3.505c0 .344-.279.629-.628.629-.347 0-.629-.285-.629-.629V8.108c0-.345.282-.63.629-.63h2.237c.348 0 .628.285.628.63zm-7.067 2.052C1.488 5.618 6.185 1.5 12 1.5c5.814 0 10.513 4.118 10.513 9.296 0 4.636-3.784 8.528-8.896 9.176-.388.083-.915.257-1.049.589-.12.298-.078.767-.038 1.07.118.904.387 2.115-.436 1.777-.736-.303-3.901-2.3-5.32-3.948C4.544 16.942 2.753 14.07 2.753 10.796z"/>
                     </svg>
                   </div>
                   <div class="flex-1">
-                    <span class="text-xs text-forest-800/70 block uppercase font-medium">LINE ID</span>
+                    <span class="text-xs text-[#2E7D32] block uppercase font-semibold">LINE ID</span>
                     <div class="flex items-center gap-3 mt-0.5">
-                      <a href="https://line.me/ti/p/~supatida_mint" target="_blank" rel="noopener noreferrer" class="text-lg font-bold text-forest-950 hover:text-emerald-700">
+                      <a href="https://line.me/ti/p/~supatida_mint" target="_blank" rel="noopener noreferrer" class="text-lg font-bold text-[#1C2D22] hover:text-[#2E7D32]">
                         supatida_mint
                       </a>
-                      <button id="btn-show-qr" class="text-xs text-emerald-800 font-semibold underline hover:text-emerald-900">
+                      <button id="btn-show-qr" class="text-xs text-[#2E7D32] font-semibold underline hover:text-[#4CAF50]">
                         ดู QR Code
                       </button>
                     </div>
-                    <span class="text-xs text-forest-900/60 block mt-0.5">ส่งรูปพื้นที่และประเมินราคาทันที</span>
+                    <span class="text-xs text-[#758A7E] block mt-0.5">ส่งรูปพื้นที่และประเมินราคาทันที</span>
                   </div>
                 </div>
 
                 <!-- Facebook -->
-                <div class="flex items-start gap-4 p-5 rounded-xl bg-surface border border-forest-100 mb-6 hover:border-emerald-700/40 transition-colors">
-                  <div class="w-12 h-12 rounded-xl bg-[#1877F2] text-white flex items-center justify-center shrink-0 shadow-sm">
+                <div class="flex items-start gap-4 p-5 rounded-2xl bg-[#F7FBF5] border border-[#81C784]/25 mb-6 hover:border-[#4CAF50]/50 transition-colors shadow-sm">
+                  <div class="w-12 h-12 rounded-2xl bg-[#1877F2] text-white flex items-center justify-center shrink-0 shadow-sm">
                     <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
                       <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                     </svg>
                   </div>
                   <div>
-                    <span class="text-xs text-forest-800/70 block uppercase font-medium">Facebook</span>
-                    <a href="https://www.facebook.com/search/top?q=Supatida%20Somkaeo" target="_blank" rel="noopener noreferrer" class="text-base font-bold text-forest-950 hover:text-emerald-700">
+                    <span class="text-xs text-[#2E7D32] block uppercase font-semibold">Facebook</span>
+                    <a href="https://www.facebook.com/search/top?q=Supatida%20Somkaeo" target="_blank" rel="noopener noreferrer" class="text-base font-bold text-[#1C2D22] hover:text-[#2E7D32]">
                       Supatida Somkaeo
                     </a>
-                    <span class="text-xs text-forest-900/60 block mt-0.5">ทักแชต Messenger พูดคุยได้ตลอดเวลา</span>
+                    <span class="text-xs text-[#758A7E] block mt-0.5">ทักแชต Messenger พูดคุยได้ตลอดเวลา</span>
                   </div>
                 </div>
 
                 <!-- Office Location / Address -->
-                <div class="p-5 rounded-xl bg-forest-950 text-white mb-6">
-                  <div class="flex items-center gap-2 text-gold text-xs font-semibold uppercase tracking-wider mb-2">
+                <div class="p-5 rounded-2xl bg-[#E8F5E9] border border-[#81C784]/35 text-[#1C2D22] mb-6 shadow-sm">
+                  <div class="flex items-center gap-2 text-[#2E7D32] text-xs font-semibold uppercase tracking-wider mb-2">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
                     <span>พื้นที่ให้บริการ</span>
                   </div>
-                  <p class="text-sm font-light text-stone-200 leading-relaxed">
+                  <p class="text-sm font-normal text-[#4A5D52] leading-relaxed">
                     กรุงเทพมหานคร นนทบุรี ปทุมธานี สมุทรปราการ สมุทรสาคร นครปฐม และพื้นที่ใกล้เคียง (ต่างจังหวัดสามารถนัดหมายสำรวจหน้างานได้)
                   </p>
                 </div>
               </div>
 
-              <!-- Embedded Google Maps Interactive Mockup / Frame -->
-              <div class="rounded-xl overflow-hidden border border-forest-200 shadow-sm relative h-56 bg-stone-100">
+              <!-- Embedded Google Maps Interactive Frame -->
+              <div class="rounded-2xl overflow-hidden border border-[#81C784]/25 shadow-sm relative h-56 bg-stone-100">
                 <iframe 
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248058.23961803736!2d100.35291244342417!3d13.724560124317135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d6032280d61f3%3A0x10100b25de24820!2sBangkok!5e0!3m2!1sen!2sth!4v1690000000000!5m2!1sen!2sth" 
                   width="100%" 
@@ -602,16 +720,16 @@
                   loading="lazy" 
                   referrerpolicy="no-referrer-when-downgrade"
                   title="พื้นที่ให้บริการจัดสวน Mint Supatida กรุงเทพฯ และปริมณฑล"
-                  class="w-full h-full grayscale-[30%] contrast-[105%]"
+                  class="w-full h-full grayscale-[20%] contrast-[105%]"
                 ></iframe>
               </div>
             </div>
 
             <!-- Contact Form (Col 7) -->
-            <div class="lg:col-span-7 bg-surface p-8 sm:p-10 rounded-2xl border border-forest-100 shadow-lg">
+            <div class="lg:col-span-7 bg-[#F7FBF5] p-8 sm:p-10 rounded-3xl border border-[#81C784]/25 shadow-md">
               <div class="mb-6">
-                <h3 class="text-2xl font-bold font-serif text-forest-950">แบบฟอร์มขอรับใบเสนอราคา</h3>
-                <p class="text-xs sm:text-sm text-forest-900/70 mt-1">
+                <h3 class="text-2xl font-bold font-serif text-[#1C2D22]">แบบฟอร์มขอรับใบเสนอราคา</h3>
+                <p class="text-xs sm:text-sm text-[#758A7E] mt-1">
                   กรอกข้อมูลเพื่อให้คุณมิ้นติดต่อกลับพร้อมประเมินราคาเบื้องต้นอย่างรวดเร็ว
                 </p>
               </div>
@@ -620,7 +738,7 @@
                 <!-- Name & Phone -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label for="form-name" class="block text-xs font-semibold text-forest-950 uppercase mb-2">
+                    <label for="form-name" class="block text-xs font-semibold text-[#1C2D22] uppercase mb-2">
                       ชื่อ - นามสกุล <span class="text-red-500">*</span>
                     </label>
                     <input 
@@ -629,11 +747,11 @@
                       name="name" 
                       required 
                       placeholder="เช่น คุณสมชาย เจริญสุข" 
-                      class="w-full px-4 py-3 rounded-xl border border-forest-200 bg-white text-forest-950 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-700/40 transition-all"
+                      class="w-full px-4 py-3 rounded-2xl border border-[#81C784]/35 bg-white text-[#1C2D22] text-sm focus:outline-none focus:ring-2 focus:ring-[#4CAF50]/40 transition-all shadow-sm"
                     />
                   </div>
                   <div>
-                    <label for="form-phone" class="block text-xs font-semibold text-forest-950 uppercase mb-2">
+                    <label for="form-phone" class="block text-xs font-semibold text-[#1C2D22] uppercase mb-2">
                       เบอร์โทรศัพท์ติดต่อ <span class="text-red-500">*</span>
                     </label>
                     <input 
@@ -642,7 +760,7 @@
                       name="phone" 
                       required 
                       placeholder="08X-XXX-XXXX" 
-                      class="w-full px-4 py-3 rounded-xl border border-forest-200 bg-white text-forest-950 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-700/40 transition-all"
+                      class="w-full px-4 py-3 rounded-2xl border border-[#81C784]/35 bg-white text-[#1C2D22] text-sm focus:outline-none focus:ring-2 focus:ring-[#4CAF50]/40 transition-all shadow-sm"
                     />
                   </div>
                 </div>
@@ -650,7 +768,7 @@
                 <!-- LINE ID & Location -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label for="form-line" class="block text-xs font-semibold text-forest-950 uppercase mb-2">
+                    <label for="form-line" class="block text-xs font-semibold text-[#1C2D22] uppercase mb-2">
                       LINE ID (สะดวกต่อการส่งรูปและแบบสวน)
                     </label>
                     <input 
@@ -658,11 +776,11 @@
                       id="form-line" 
                       name="line" 
                       placeholder="ไอดีไลน์ของคุณ" 
-                      class="w-full px-4 py-3 rounded-xl border border-forest-200 bg-white text-forest-950 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-700/40 transition-all"
+                      class="w-full px-4 py-3 rounded-2xl border border-[#81C784]/35 bg-white text-[#1C2D22] text-sm focus:outline-none focus:ring-2 focus:ring-[#4CAF50]/40 transition-all shadow-sm"
                     />
                   </div>
                   <div>
-                    <label for="form-location" class="block text-xs font-semibold text-forest-950 uppercase mb-2">
+                    <label for="form-location" class="block text-xs font-semibold text-[#1C2D22] uppercase mb-2">
                       สถานที่หน้างาน / ชื่อโครงการ
                     </label>
                     <input 
@@ -670,39 +788,39 @@
                       id="form-location" 
                       name="location" 
                       placeholder="เช่น โครงการเศรษฐสิริ พัฒนาการ" 
-                      class="w-full px-4 py-3 rounded-xl border border-forest-200 bg-white text-forest-950 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-700/40 transition-all"
+                      class="w-full px-4 py-3 rounded-2xl border border-[#81C784]/35 bg-white text-[#1C2D22] text-sm focus:outline-none focus:ring-2 focus:ring-[#4CAF50]/40 transition-all shadow-sm"
                     />
                   </div>
                 </div>
 
                 <!-- Exact 6 Services (Checkboxes) -->
                 <div>
-                  <label class="block text-xs font-semibold text-forest-950 uppercase mb-3">
+                  <label class="block text-xs font-semibold text-[#1C2D22] uppercase mb-3">
                     บริการที่ท่านสนใจ (เลือกได้มากกว่า 1 รายการ)
                   </label>
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs text-forest-950">
-                    <label class="flex items-center gap-2.5 p-3 rounded-lg bg-white border border-forest-200/80 cursor-pointer hover:border-emerald-700/50">
-                      <input type="checkbox" name="services" value="landscape" class="rounded text-emerald-700 focus:ring-emerald-700" checked />
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs text-[#1C2D22]">
+                    <label class="flex items-center gap-2.5 p-3 rounded-xl bg-white border border-[#81C784]/30 cursor-pointer hover:border-[#4CAF50] transition-colors shadow-sm">
+                      <input type="checkbox" name="services" value="landscape" class="rounded text-[#4CAF50] focus:ring-[#4CAF50]" checked />
                       <span class="font-medium">รับจัดสวนครบวงจร</span>
                     </label>
-                    <label class="flex items-center gap-2.5 p-3 rounded-lg bg-white border border-forest-200/80 cursor-pointer hover:border-emerald-700/50">
-                      <input type="checkbox" name="services" value="english" class="rounded text-emerald-700 focus:ring-emerald-700" checked />
+                    <label class="flex items-center gap-2.5 p-3 rounded-xl bg-white border border-[#81C784]/30 cursor-pointer hover:border-[#4CAF50] transition-colors shadow-sm">
+                      <input type="checkbox" name="services" value="english" class="rounded text-[#4CAF50] focus:ring-[#4CAF50]" checked />
                       <span class="font-medium">รับจัดสวนอังกฤษ</span>
                     </label>
-                    <label class="flex items-center gap-2.5 p-3 rounded-lg bg-white border border-forest-200/80 cursor-pointer hover:border-emerald-700/50">
-                      <input type="checkbox" name="services" value="turf" class="rounded text-emerald-700 focus:ring-emerald-700" />
+                    <label class="flex items-center gap-2.5 p-3 rounded-xl bg-white border border-[#81C784]/30 cursor-pointer hover:border-[#4CAF50] transition-colors shadow-sm">
+                      <input type="checkbox" name="services" value="turf" class="rounded text-[#4CAF50] focus:ring-[#4CAF50]" />
                       <span class="font-medium">รับปูหญ้าเทียม</span>
                     </label>
-                    <label class="flex items-center gap-2.5 p-3 rounded-lg bg-white border border-forest-200/80 cursor-pointer hover:border-emerald-700/50">
-                      <input type="checkbox" name="services" value="tiling" class="rounded text-emerald-700 focus:ring-emerald-700" />
+                    <label class="flex items-center gap-2.5 p-3 rounded-xl bg-white border border-[#81C784]/30 cursor-pointer hover:border-[#4CAF50] transition-colors shadow-sm">
+                      <input type="checkbox" name="services" value="tiling" class="rounded text-[#4CAF50] focus:ring-[#4CAF50]" />
                       <span class="font-medium">รับปูกระเบื้อง</span>
                     </label>
-                    <label class="flex items-center gap-2.5 p-3 rounded-lg bg-white border border-forest-200/80 cursor-pointer hover:border-emerald-700/50">
-                      <input type="checkbox" name="services" value="planting" class="rounded text-emerald-700 focus:ring-emerald-700" />
+                    <label class="flex items-center gap-2.5 p-3 rounded-xl bg-white border border-[#81C784]/30 cursor-pointer hover:border-[#4CAF50] transition-colors shadow-sm">
+                      <input type="checkbox" name="services" value="planting" class="rounded text-[#4CAF50] focus:ring-[#4CAF50]" />
                       <span class="font-medium">รับปลูกต้นไม้ทุกชนิด</span>
                     </label>
-                    <label class="flex items-center gap-2.5 p-3 rounded-lg bg-white border border-forest-200/80 cursor-pointer hover:border-emerald-700/50">
-                      <input type="checkbox" name="services" value="subsidence" class="rounded text-emerald-700 focus:ring-emerald-700" />
+                    <label class="flex items-center gap-2.5 p-3 rounded-xl bg-white border border-[#81C784]/30 cursor-pointer hover:border-[#4CAF50] transition-colors shadow-sm">
+                      <input type="checkbox" name="services" value="subsidence" class="rounded text-[#4CAF50] focus:ring-[#4CAF50]" />
                       <span class="font-medium">รับแก้ปัญหาโพรงดินทรุด</span>
                     </label>
                   </div>
@@ -711,13 +829,13 @@
                 <!-- Land Size & Budget Estimate Slider -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label for="form-area" class="block text-xs font-semibold text-forest-950 uppercase mb-2">
+                    <label for="form-area" class="block text-xs font-semibold text-[#1C2D22] uppercase mb-2">
                       ขนาดพื้นที่โดยประมาณ
                     </label>
                     <select 
                       id="form-area" 
                       name="area" 
-                      class="w-full px-4 py-3 rounded-xl border border-forest-200 bg-white text-forest-950 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-700/40"
+                      class="w-full px-4 py-3 rounded-2xl border border-[#81C784]/35 bg-white text-[#1C2D22] text-sm focus:outline-none focus:ring-2 focus:ring-[#4CAF50]/40 shadow-sm"
                     >
                       <option value="30-70">30 - 70 ตร.ม. (สวนขนาดเล็ก / ทาวน์โฮม)</option>
                       <option value="71-150" selected>71 - 150 ตร.ม. (บ้านเดี่ยวขนาดกลาง)</option>
@@ -726,13 +844,13 @@
                     </select>
                   </div>
                   <div>
-                    <label for="form-budget" class="block text-xs font-semibold text-forest-950 uppercase mb-2">
+                    <label for="form-budget" class="block text-xs font-semibold text-[#1C2D22] uppercase mb-2">
                       งบประมาณที่ตั้งไว้เบื้องต้น
                     </label>
                     <select 
                       id="form-budget" 
                       name="budget" 
-                      class="w-full px-4 py-3 rounded-xl border border-forest-200 bg-white text-forest-950 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-700/40"
+                      class="w-full px-4 py-3 rounded-2xl border border-[#81C784]/35 bg-white text-[#1C2D22] text-sm focus:outline-none focus:ring-2 focus:ring-[#4CAF50]/40 shadow-sm"
                     >
                       <option value="50k-100k">50,000 - 100,000 บาท</option>
                       <option value="100k-250k" selected>100,000 - 250,000 บาท</option>
@@ -744,7 +862,7 @@
 
                 <!-- Additional Details -->
                 <div>
-                  <label for="form-message" class="block text-xs font-semibold text-forest-950 uppercase mb-2">
+                  <label for="form-message" class="block text-xs font-semibold text-[#1C2D22] uppercase mb-2">
                     รายละเอียดเพิ่มเติม หรือสิ่งที่ต้องการเน้น
                   </label>
                   <textarea 
@@ -752,22 +870,22 @@
                     name="message" 
                     rows="3" 
                     placeholder="เช่น สนใจสวนอังกฤษรอบบ้าน, ดินใต้ตัวบ้านทรุดเป็นโพรงต้องการอุดปิด, ต้องการปูหญ้าเทียมหลังบ้าน..." 
-                    class="w-full px-4 py-3 rounded-xl border border-forest-200 bg-white text-forest-950 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-700/40 transition-all"
+                    class="w-full px-4 py-3 rounded-2xl border border-[#81C784]/35 bg-white text-[#1C2D22] text-sm focus:outline-none focus:ring-2 focus:ring-[#4CAF50]/40 transition-all shadow-sm"
                   ></textarea>
                 </div>
 
                 <!-- Privacy Consent -->
-                <div class="flex items-start gap-2.5 text-xs text-forest-900/70">
-                  <input type="checkbox" id="form-consent" required class="mt-0.5 rounded text-emerald-700 focus:ring-emerald-700" checked />
+                <div class="flex items-start gap-2.5 text-xs text-[#758A7E]">
+                  <input type="checkbox" id="form-consent" required class="mt-0.5 rounded text-[#4CAF50] focus:ring-[#4CAF50]" checked />
                   <label for="form-consent">
-                    ข้าพเจ้ายินยอมให้ Mint Supatida รับออกแบบจัดสวน เก็บรวบรวมข้อมูลติดต่อเพื่อการประเมินราคาและการประสานงาน ตาม <button type="button" id="btn-open-privacy-inline" class="text-emerald-800 underline font-semibold">นโยบายความเป็นส่วนตัว (PDPA)</button>
+                    ข้าพเจ้ายินยอมให้ Mint Supatida รับออกแบบจัดสวน เก็บรวบรวมข้อมูลติดต่อเพื่อการประเมินราคาและการประสานงาน ตาม <button type="button" id="btn-open-privacy-inline" class="text-[#2E7D32] underline font-semibold">นโยบายความเป็นส่วนตัว (PDPA)</button>
                   </label>
                 </div>
 
                 <!-- Submit Button -->
                 <button 
                   type="submit" 
-                  class="w-full btn-primary py-4 rounded-xl font-bold text-base shadow-lg hover:shadow-emerald-900/30 flex items-center justify-center gap-3"
+                  class="w-full btn-primary py-4 rounded-2xl font-bold text-base shadow-lg flex items-center justify-center gap-3"
                 >
                   <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
                   <span>ส่งข้อมูลขอใบเสนอราคา (ประเมินฟรี)</span>
@@ -779,32 +897,32 @@
       </section>
     </main>
 
-    <!-- 7. FOOTER SECTION -->
-    <footer class="bg-forest-950 text-white pt-16 pb-12 border-t border-forest-900">
+    <!-- 7. FOOTER SECTION — Clean White Modern Luxury -->
+    <footer class="bg-white text-[#4A5D52] pt-16 pb-12 border-t border-[#81C784]/25">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-[#81C784]/20">
           <!-- Company Info & Mission (Col 4) -->
           <div class="lg:col-span-4">
             <div class="flex items-center gap-3 mb-4">
-              <div class="w-10 h-10 rounded-full bg-forest-800 flex items-center justify-center text-gold border border-gold/30">
+              <div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#4CAF50] to-[#2E7D32] flex items-center justify-center text-white border border-[#81C784]/30 shadow-sm">
                 <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
                   <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
                   <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
                 </svg>
               </div>
               <div>
-                <span class="text-xl font-bold font-serif text-white">Mint Supatida <span class="text-emerald-400 text-sm font-normal">รับออกแบบจัดสวน</span></span>
-                <p class="text-[10px] text-stone-400 tracking-wider uppercase">คุณศุภธิดา ส้มแก้ว (มิ้น)</p>
+                <span class="text-xl font-bold font-serif text-[#1C2D22]">Mint Supatida <span class="text-[#2E7D32] text-sm font-medium">รับออกแบบจัดสวน</span></span>
+                <p class="text-[10px] text-[#758A7E] tracking-wider uppercase">คุณศุภธิดา ส้มแก้ว (มิ้น)</p>
               </div>
             </div>
-            <p class="text-xs sm:text-sm text-stone-300 font-light leading-relaxed mb-6">
+            <p class="text-xs sm:text-sm text-[#4A5D52] font-normal leading-relaxed mb-6">
               "เปลี่ยนพื้นที่ธรรมดา ให้เป็นสวนในฝัน" บริการจัดสวนครบวงจร สวนอังกฤษ ปูหญ้าเทียม ปูกระเบื้อง ปลูกต้นไม้ทุกชนิด และแก้ปัญหาโพรงดินทรุด ประณีต ทุกจุดคุ้มค่าเงิน
             </p>
-            <div class="flex items-center gap-3 text-stone-400">
-              <a href="https://www.facebook.com/search/top?q=Supatida%20Somkaeo" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-forest-900 flex items-center justify-center hover:bg-[#1877F2] hover:text-white transition-colors" aria-label="Facebook: Supatida Somkaeo">
+            <div class="flex items-center gap-3 text-[#2E7D32]">
+              <a href="https://www.facebook.com/search/top?q=Supatida%20Somkaeo" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-[#E8F5E9] flex items-center justify-center hover:bg-[#1877F2] hover:text-white transition-colors" aria-label="Facebook: Supatida Somkaeo">
                 <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
               </a>
-              <a href="https://line.me/ti/p/~supatida_mint" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-forest-900 flex items-center justify-center hover:bg-[#06C755] hover:text-white transition-colors" aria-label="LINE: supatida_mint">
+              <a href="https://line.me/ti/p/~supatida_mint" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-[#E8F5E9] flex items-center justify-center hover:bg-[#06C755] hover:text-white transition-colors" aria-label="LINE: supatida_mint">
                 <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.499.254l2.462 3.33v-2.95c0-.348.279-.63.63-.63.348 0 .626.282.626.63v4.764zm-5.69-4.135c0 .345-.28.63-.628.63H7.582v3.505c0 .344-.279.629-.628.629-.347 0-.629-.285-.629-.629V8.108c0-.345.282-.63.629-.63h2.237c.348 0 .628.285.628.63zm-7.067 2.052C1.488 5.618 6.185 1.5 12 1.5c5.814 0 10.513 4.118 10.513 9.296 0 4.636-3.784 8.528-8.896 9.176-.388.083-.915.257-1.049.589-.12.298-.078.767-.038 1.07.118.904.387 2.115-.436 1.777-.736-.303-3.901-2.3-5.32-3.948C4.544 16.942 2.753 14.07 2.753 10.796z"/></svg>
               </a>
             </div>
@@ -812,47 +930,47 @@
 
           <!-- Quick Navigation Links (Col 2) -->
           <div class="lg:col-span-2">
-            <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">เมนูด่วน</h4>
-            <ul class="space-y-2.5 text-xs text-stone-300">
-              <li><a href="#home" class="hover:text-gold transition-colors">หน้าแรก (Home)</a></li>
-              <li><a href="#about" class="hover:text-gold transition-colors">เกี่ยวกับเรา (About Us)</a></li>
-              <li><a href="#services" class="hover:text-gold transition-colors">บริการของเรา (Services)</a></li>
-              <li><a href="#portfolio" class="hover:text-gold transition-colors">ผลงาน (Portfolio)</a></li>
-              <li><a href="#reviews" class="hover:text-gold transition-colors">รีวิวลูกค้า (Reviews)</a></li>
-              <li><a href="#contact" class="hover:text-gold transition-colors">ติดต่อเรา (Contact)</a></li>
+            <h4 class="text-sm font-semibold text-[#1C2D22] uppercase tracking-wider mb-4">เมนูด่วน</h4>
+            <ul class="space-y-2.5 text-xs text-[#4A5D52]">
+              <li><a href="#home" class="hover:text-[#2E7D32] transition-colors">หน้าแรก (Home)</a></li>
+              <li><a href="#about" class="hover:text-[#2E7D32] transition-colors">เกี่ยวกับเรา (About Us)</a></li>
+              <li><a href="#services" class="hover:text-[#2E7D32] transition-colors">บริการของเรา (Services)</a></li>
+              <li><a href="#portfolio" class="hover:text-[#2E7D32] transition-colors">ผลงาน (Portfolio)</a></li>
+              <li><a href="#reviews" class="hover:text-[#2E7D32] transition-colors">รีวิวลูกค้า (Reviews)</a></li>
+              <li><a href="#contact" class="hover:text-[#2E7D32] transition-colors">ติดต่อเรา (Contact)</a></li>
             </ul>
           </div>
 
           <!-- Services List (Col 3) -->
           <div class="lg:col-span-3">
-            <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">บริการทั้ง 6 ด้าน</h4>
-            <ul class="space-y-2.5 text-xs text-stone-300">
-              <li><a href="#services" class="hover:text-gold transition-colors">รับจัดสวนครบวงจร</a></li>
-              <li><a href="#services" class="hover:text-gold transition-colors">รับจัดสวนอังกฤษ</a></li>
-              <li><a href="#services" class="hover:text-gold transition-colors">รับปูหญ้าเทียม</a></li>
-              <li><a href="#services" class="hover:text-gold transition-colors">รับปูกระเบื้อง</a></li>
-              <li><a href="#services" class="hover:text-gold transition-colors">รับปลูกต้นไม้ทุกชนิด</a></li>
-              <li><a href="#services" class="hover:text-gold transition-colors">รับแก้ปัญหาโพรงดินทรุด</a></li>
+            <h4 class="text-sm font-semibold text-[#1C2D22] uppercase tracking-wider mb-4">บริการทั้ง 6 ด้าน</h4>
+            <ul class="space-y-2.5 text-xs text-[#4A5D52]">
+              <li><a href="#services" class="hover:text-[#2E7D32] transition-colors">รับจัดสวนครบวงจร</a></li>
+              <li><a href="#services" class="hover:text-[#2E7D32] transition-colors">รับจัดสวนอังกฤษ</a></li>
+              <li><a href="#services" class="hover:text-[#2E7D32] transition-colors">รับปูหญ้าเทียม</a></li>
+              <li><a href="#services" class="hover:text-[#2E7D32] transition-colors">รับปูกระเบื้อง</a></li>
+              <li><a href="#services" class="hover:text-[#2E7D32] transition-colors">รับปลูกต้นไม้ทุกชนิด</a></li>
+              <li><a href="#services" class="hover:text-[#2E7D32] transition-colors">รับแก้ปัญหาโพรงดินทรุด</a></li>
             </ul>
           </div>
 
           <!-- Hours & Location (Col 3) -->
           <div class="lg:col-span-3">
-            <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">ช่องทางติดต่อ</h4>
-            <div class="space-y-3 text-xs text-stone-300">
-              <p class="text-white font-semibold">
+            <h4 class="text-sm font-semibold text-[#1C2D22] uppercase tracking-wider mb-4">ช่องทางติดต่อ</h4>
+            <div class="space-y-3 text-xs text-[#4A5D52]">
+              <p class="text-[#1C2D22] font-semibold">
                 คุณศุภธิดา ส้มแก้ว (มิ้น)
               </p>
               <p>
-                โทร: <a href="tel:0970172072" class="text-gold font-bold hover:underline">097-017-2072</a>
+                โทร: <a href="tel:0970172072" class="text-[#2E7D32] font-bold hover:underline">097-017-2072</a>
               </p>
               <p>
-                LINE: <a href="https://line.me/ti/p/~supatida_mint" target="_blank" rel="noopener noreferrer" class="text-emerald-400 font-bold hover:underline">supatida_mint</a>
+                LINE: <a href="https://line.me/ti/p/~supatida_mint" target="_blank" rel="noopener noreferrer" class="text-[#2E7D32] font-bold hover:underline">supatida_mint</a>
               </p>
               <p>
-                Facebook: <a href="https://www.facebook.com/search/top?q=Supatida%20Somkaeo" target="_blank" rel="noopener noreferrer" class="text-stone-300 hover:text-white underline">Supatida Somkaeo</a>
+                Facebook: <a href="https://www.facebook.com/search/top?q=Supatida%20Somkaeo" target="_blank" rel="noopener noreferrer" class="text-[#4A5D52] hover:text-[#2E7D32] underline">Supatida Somkaeo</a>
               </p>
-              <p class="pt-2 text-stone-400">
+              <p class="pt-2 text-[#758A7E]">
                 เปิดบริการทุกวัน: 08:00 - 19:00 น.
               </p>
             </div>
@@ -860,13 +978,13 @@
         </div>
 
         <!-- Copyright & PDPA Links -->
-        <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-400">
+        <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#758A7E]">
           <p>© 2026 Mint Supatida รับออกแบบจัดสวน (คุณศุภธิดา ส้มแก้ว). สงวนลิขสิทธิ์ (All Rights Reserved)</p>
           <div class="flex items-center gap-6">
-            <button id="btn-footer-privacy" class="hover:text-white transition-colors underline">
+            <button id="btn-footer-privacy" class="hover:text-[#1C2D22] transition-colors underline">
               นโยบายความเป็นส่วนตัว (Privacy Policy)
             </button>
-            <a href="#home" class="hover:text-white transition-colors flex items-center gap-1">
+            <a href="#home" class="hover:text-[#1C2D22] transition-colors flex items-center gap-1">
               <span>กลับขึ้นด้านบน</span>
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
             </a>
@@ -878,33 +996,33 @@
     <!-- MODALS & DIALOGS -->
 
     <!-- 1. Privacy Policy Modal (PDPA Compliant) -->
-    <div id="privacy-modal" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
-      <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[85vh] flex flex-col shadow-2xl border border-forest-100 animate-scale-up">
-        <div class="p-6 border-b border-forest-100 flex items-center justify-between">
-          <h3 class="text-lg font-bold font-serif text-forest-950">นโยบายความเป็นส่วนตัว (Privacy Policy)</h3>
-          <button id="btn-close-privacy" class="p-2 rounded-lg text-stone-400 hover:text-stone-800 hover:bg-stone-100" aria-label="ปิด">
+    <div id="privacy-modal" class="fixed inset-0 z-50 hidden bg-black/40 backdrop-blur-sm flex items-center justify-center p-4">
+      <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[85vh] flex flex-col shadow-2xl border border-[#81C784]/25 animate-scale-up">
+        <div class="p-6 border-b border-[#81C784]/20 flex items-center justify-between">
+          <h3 class="text-lg font-bold font-serif text-[#1C2D22]">นโยบายความเป็นส่วนตัว (Privacy Policy)</h3>
+          <button id="btn-close-privacy" class="p-2 rounded-xl text-[#758A7E] hover:text-[#1C2D22] hover:bg-[#E8F5E9]" aria-label="ปิด">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
           </button>
         </div>
-        <div class="p-6 overflow-y-auto space-y-4 text-xs sm:text-sm text-forest-900/80 leading-relaxed">
-          <p class="font-semibold text-forest-950">
+        <div class="p-6 overflow-y-auto space-y-4 text-xs sm:text-sm text-[#4A5D52] leading-relaxed">
+          <p class="font-semibold text-[#1C2D22]">
             Mint Supatida รับออกแบบจัดสวน ("ผู้ให้บริการ") ให้ความสำคัญสูงสุดในการคุ้มครองข้อมูลส่วนบุคคลของท่าน ตามพระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562 (PDPA)
           </p>
-          <h4 class="font-bold text-forest-950 text-sm">1. ข้อมูลส่วนบุคคลที่เราเก็บรวบรวม</h4>
+          <h4 class="font-bold text-[#1C2D22] text-sm">1. ข้อมูลส่วนบุคคลที่เราเก็บรวบรวม</h4>
           <p>
             เราเก็บรวบรวมข้อมูลที่จำเป็น เช่น ชื่อ-นามสกุล, เบอร์โทรศัพท์, บัญชี LINE ID, อีเมล, สถานที่ตั้งโครงการ และข้อมูลความต้องการจัดสวน ซึ่งท่านได้ให้ไว้ผ่านแบบฟอร์มบนเว็บไซต์หรือการติดต่อประสานงาน
           </p>
-          <h4 class="font-bold text-forest-950 text-sm">2. วัตถุประสงค์ในการนำข้อมูลไปใช้</h4>
+          <h4 class="font-bold text-[#1C2D22] text-sm">2. วัตถุประสงค์ในการนำข้อมูลไปใช้</h4>
           <p>
             ข้อมูลจะถูกใช้เพื่อการติดต่อกลับ การนัดหมายสำรวจหน้างาน การออกเอกสารใบเสนอราคา การจัดทำแบบ และการให้บริการหลังการขายตามสัญญารับประกันเท่านั้น ผู้ให้บริการจะไม่มีการเผยแพร่หรือจำหน่ายข้อมูลส่วนบุคคลของท่านให้แก่บุคคลภายนอกโดยเด็ดขาด
           </p>
-          <h4 class="font-bold text-forest-950 text-sm">3. ความปลอดภัยและการรักษาข้อมูล</h4>
+          <h4 class="font-bold text-[#1C2D22] text-sm">3. ความปลอดภัยและการรักษาข้อมูล</h4>
           <p>
             เรามีมาตรการรักษาความมั่นคงปลอดภัยเพื่อป้องกันการเข้าถึงหรือการใช้ข้อมูลโดยไม่ได้รับอนุญาต โดยท่านสามารถแจ้งขอตรวจสอบ แก้ไข หรือขอลบข้อมูลของท่านได้ตลอดเวลาผ่าน LINE: supatida_mint หรือโทร 097-017-2072
           </p>
         </div>
-        <div class="p-4 border-t border-forest-100 bg-surface flex justify-end">
-          <button id="btn-confirm-privacy" class="btn-primary px-6 py-2 rounded-xl text-xs font-semibold">
+        <div class="p-4 border-t border-[#81C784]/20 bg-[#F7FBF5] rounded-b-3xl flex justify-end">
+          <button id="btn-confirm-privacy" class="btn-primary px-6 py-2.5 rounded-full text-xs font-semibold">
             รับทราบและปิดหน้าต่าง
           </button>
         </div>
@@ -912,10 +1030,10 @@
     </div>
 
     <!-- 2. LINE QR Code Modal -->
-    <div id="line-modal" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
-      <div class="bg-white rounded-2xl max-w-sm w-full p-6 text-center shadow-2xl border border-forest-100 animate-scale-up">
+    <div id="line-modal" class="fixed inset-0 z-50 hidden bg-black/40 backdrop-blur-sm flex items-center justify-center p-4">
+      <div class="bg-white rounded-3xl max-w-sm w-full p-6 text-center shadow-2xl border border-[#81C784]/25 animate-scale-up">
         <div class="flex justify-end">
-          <button id="btn-close-line" class="p-1 rounded-lg text-stone-400 hover:text-stone-800" aria-label="ปิด">
+          <button id="btn-close-line" class="p-1 rounded-xl text-[#758A7E] hover:text-[#1C2D22]" aria-label="ปิด">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
           </button>
         </div>
@@ -924,11 +1042,11 @@
             <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.499.254l2.462 3.33v-2.95c0-.348.279-.63.63-.63.348 0 .626.282.626.63v4.764zm-5.69-4.135c0 .345-.28.63-.628.63H7.582v3.505c0 .344-.279.629-.628.629-.347 0-.629-.285-.629-.629V8.108c0-.345.282-.63.629-.63h2.237c.348 0 .628.285.628.63zm-7.067 2.052C1.488 5.618 6.185 1.5 12 1.5c5.814 0 10.513 4.118 10.513 9.296 0 4.636-3.784 8.528-8.896 9.176-.388.083-.915.257-1.049.589-.12.298-.078.767-.038 1.07.118.904.387 2.115-.436 1.777-.736-.303-3.901-2.3-5.32-3.948C4.544 16.942 2.753 14.07 2.753 10.796z"/>
           </svg>
         </div>
-        <h4 class="font-bold text-forest-950 text-base">แอด LINE คุณมิ้น ศุภธิดา</h4>
-        <p class="text-xs text-forest-800/70 mt-1 mb-4">สแกน QR Code หรือค้นหาไอดี: <strong class="text-forest-950 font-bold">supatida_mint</strong></p>
+        <h4 class="font-bold text-[#1C2D22] text-base">แอด LINE คุณมิ้น ศุภธิดา</h4>
+        <p class="text-xs text-[#758A7E] mt-1 mb-4">สแกน QR Code หรือค้นหาไอดี: <strong class="text-[#1C2D22] font-bold">supatida_mint</strong></p>
         
         <!-- QR Code Mockup with live supatida_mint target -->
-        <div class="bg-forest-50 p-4 rounded-xl border border-forest-200 inline-block mb-4">
+        <div class="bg-[#F7FBF5] p-4 rounded-2xl border border-[#81C784]/25 inline-block mb-4">
           <img 
             src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://line.me/ti/p/~supatida_mint" 
             alt="LINE QR Code supatida_mint" 
@@ -937,52 +1055,52 @@
           />
         </div>
         
-        <a href="https://line.me/ti/p/~supatida_mint" target="_blank" rel="noopener noreferrer" class="btn-primary w-full py-3 rounded-xl text-xs font-semibold block">
+        <a href="https://line.me/ti/p/~supatida_mint" target="_blank" rel="noopener noreferrer" class="btn-primary w-full py-3 rounded-2xl text-xs font-semibold block">
           เปิด LINE เพื่อแอดเพื่อนทันที
         </a>
       </div>
     </div>
 
     <!-- 3. Form Submission Success Modal -->
-    <div id="success-modal" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
-      <div class="bg-white rounded-2xl max-w-md w-full p-8 text-center shadow-2xl border border-emerald-100 animate-scale-up">
-        <div class="w-16 h-16 mx-auto rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center mb-4">
+    <div id="success-modal" class="fixed inset-0 z-50 hidden bg-black/40 backdrop-blur-sm flex items-center justify-center p-4">
+      <div class="bg-white rounded-3xl max-w-md w-full p-8 text-center shadow-2xl border border-[#81C784]/25 animate-scale-up">
+        <div class="w-16 h-16 mx-auto rounded-full bg-[#E8F5E9] text-[#2E7D32] flex items-center justify-center mb-4">
           <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
         </div>
-        <h3 class="text-2xl font-bold font-serif text-forest-950">ส่งข้อมูลเรียบร้อยแล้ว</h3>
-        <p class="text-sm text-forest-900/70 mt-2 mb-6">
+        <h3 class="text-2xl font-bold font-serif text-[#1C2D22]">ส่งข้อมูลเรียบร้อยแล้ว</h3>
+        <p class="text-sm text-[#4A5D52] mt-2 mb-6">
           ขอบพระคุณที่ไว้วางใจ Mint Supatida รับออกแบบจัดสวน ทางเราได้รับข้อมูลของคุณแล้ว และคุณมิ้นจะติดต่อกลับตามเบอร์ที่ให้ไว้โดยเร็วที่สุด
         </p>
-        <div class="p-4 rounded-xl bg-forest-50 border border-forest-100 text-left text-xs space-y-1 mb-6">
-          <p><span class="font-bold text-forest-950">รหัสอ้างอิง:</span> <span id="success-ref" class="font-mono text-emerald-800 font-bold">#MS-2026-101</span></p>
-          <p><span class="font-bold text-forest-950">ติดต่อด่วน:</span> โทร 097-017-2072 หรือ LINE: supatida_mint</p>
+        <div class="p-4 rounded-2xl bg-[#F7FBF5] border border-[#81C784]/25 text-left text-xs space-y-1 mb-6">
+          <p><span class="font-bold text-[#1C2D22]">รหัสอ้างอิง:</span> <span id="success-ref" class="font-mono text-[#2E7D32] font-bold">#MS-2026-101</span></p>
+          <p><span class="font-bold text-[#1C2D22]">ติดต่อด่วน:</span> โทร 097-017-2072 หรือ LINE: supatida_mint</p>
         </div>
-        <button id="btn-close-success" class="btn-primary w-full py-3 rounded-xl text-sm font-semibold">
+        <button id="btn-close-success" class="btn-primary w-full py-3 rounded-2xl text-sm font-semibold">
           ตกลง
         </button>
       </div>
     </div>
 
     <!-- 4. Project Lightbox Modal -->
-    <div id="project-lightbox" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-md flex items-center justify-center p-4">
-      <div class="bg-white rounded-2xl max-w-3xl w-full overflow-hidden shadow-2xl border border-white/20 animate-scale-up max-h-[90vh] flex flex-col">
-        <div class="relative aspect-[16/10] bg-black">
+    <div id="project-lightbox" class="fixed inset-0 z-50 hidden bg-black/70 backdrop-blur-md flex items-center justify-center p-4">
+      <div class="bg-white rounded-3xl max-w-3xl w-full overflow-hidden shadow-2xl border border-[#81C784]/25 animate-scale-up max-h-[90vh] flex flex-col">
+        <div class="relative aspect-[16/10] bg-stone-100">
           <img id="lightbox-img" src="" alt="ผลงานจัดสวน Mint Supatida" class="w-full h-full object-cover" />
-          <button id="btn-close-lightbox" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-black/60 text-white flex items-center justify-center hover:bg-black" aria-label="ปิด">
+          <button id="btn-close-lightbox" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/80 backdrop-blur-md text-[#1C2D22] flex items-center justify-center hover:bg-white shadow-md" aria-label="ปิด">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
           </button>
         </div>
         <div class="p-6 overflow-y-auto">
           <div class="flex items-center gap-2 mb-2">
-            <span id="lightbox-category" class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-xs font-semibold"></span>
-            <span id="lightbox-location" class="text-xs text-forest-800/70 font-medium"></span>
+            <span id="lightbox-category" class="px-2.5 py-0.5 rounded-full bg-[#E8F5E9] text-[#2E7D32] text-xs font-semibold"></span>
+            <span id="lightbox-location" class="text-xs text-[#758A7E] font-medium"></span>
           </div>
-          <h3 id="lightbox-title" class="text-xl sm:text-2xl font-bold font-serif text-forest-950 mb-3"></h3>
-          <p id="lightbox-desc" class="text-sm text-forest-900/80 leading-relaxed mb-6"></p>
-          <div class="flex items-center justify-between pt-4 border-t border-forest-100">
-            <div class="flex items-center gap-4 text-xs text-forest-900/70">
-              <span>ขนาดพื้นที่: <strong id="lightbox-area" class="text-forest-950"></strong></span>
-              <span>ระยะเวลาดำเนินการ: <strong id="lightbox-duration" class="text-forest-950"></strong></span>
+          <h3 id="lightbox-title" class="text-xl sm:text-2xl font-bold font-serif text-[#1C2D22] mb-3"></h3>
+          <p id="lightbox-desc" class="text-sm text-[#4A5D52] leading-relaxed mb-6"></p>
+          <div class="flex items-center justify-between pt-4 border-t border-[#81C784]/20">
+            <div class="flex items-center gap-4 text-xs text-[#4A5D52]">
+              <span>ขนาดพื้นที่: <strong id="lightbox-area" class="text-[#1C2D22]"></strong></span>
+              <span>ระยะเวลาดำเนินการ: <strong id="lightbox-duration" class="text-[#1C2D22]"></strong></span>
             </div>
             <button id="btn-lightbox-quote" class="btn-primary text-xs px-5 py-2.5 rounded-full font-semibold">
               ขอใบเสนอราคาสไตล์นี้
@@ -995,7 +1113,7 @@
     <!-- FLOATING ACTIONS ON MOBILE -->
     <div class="fixed bottom-4 right-4 z-40 flex flex-col gap-2.5">
       <!-- Call Button -->
-      <a href="tel:0970172072" class="w-12 h-12 rounded-full bg-forest-900 text-gold shadow-lg flex items-center justify-center hover:scale-110 transition-transform border border-gold/40" aria-label="โทรหาคุณมิ้น 097-017-2072">
+      <a href="tel:0970172072" class="w-12 h-12 rounded-full bg-gradient-to-br from-[#4CAF50] to-[#2E7D32] text-white shadow-lg flex items-center justify-center hover:scale-110 transition-transform border border-[#81C784]/40" aria-label="โทรหาคุณมิ้น 097-017-2072">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
       </a>
       <!-- LINE Button -->
