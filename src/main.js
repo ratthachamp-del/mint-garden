@@ -55,7 +55,7 @@ const ICONS = {
     <path stroke-linecap="round" stroke-linejoin="round" d="M3 21h18"/>
   </svg>`,
 
-  check: `<svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>`
+  check: `<svg class="w-4 h-4 text-[#4CAF50] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>`
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -72,30 +72,30 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // ============================================================================
-// 1. RENDER WORK STEPS (About Us)
+// 1. RENDER WORK STEPS (About Us - Fresh Light Luxury)
 // ============================================================================
 function renderWorkSteps() {
   const container = document.getElementById('work-steps-container');
   if (!container) return;
 
   container.innerHTML = WORK_STEPS.map((item) => `
-    <div class="relative p-6 rounded-2xl bg-white border border-forest-100 shadow-sm hover:shadow-md hover:border-emerald-700/30 transition-all group">
+    <div class="relative p-6 sm:p-7 rounded-3xl bg-white border border-[#81C784]/25 shadow-sm hover:shadow-lg hover:border-[#4CAF50] transition-all group">
       <div class="flex items-center justify-between mb-4">
-        <span class="text-3xl font-bold font-serif text-emerald-800/40 group-hover:text-emerald-700 transition-colors">
+        <span class="text-3xl font-bold font-serif text-[#81C784] group-hover:text-[#2E7D32] transition-colors">
           ${item.step}
         </span>
-        <span class="w-8 h-8 rounded-full bg-forest-50 text-emerald-800 flex items-center justify-center text-xs font-bold">
+        <span class="w-8 h-8 rounded-full bg-[#E8F5E9] text-[#2E7D32] flex items-center justify-center text-xs font-bold border border-[#81C784]/30">
           ✓
         </span>
       </div>
-      <h4 class="text-base font-bold text-forest-950 mb-2 font-serif">${item.title}</h4>
-      <p class="text-xs sm:text-sm text-forest-900/70 leading-relaxed font-light">${item.desc}</p>
+      <h4 class="text-base font-bold text-[#1C2D22] mb-2 font-serif">${item.title}</h4>
+      <p class="text-xs sm:text-sm text-[#4A5D52] leading-relaxed font-light">${item.desc}</p>
     </div>
   `).join('');
 }
 
 // ============================================================================
-// 2. RENDER SERVICES (6 Services tailored to Mint Supatida)
+// 2. RENDER SERVICES (6 Services - Fresh Light Modern Luxury)
 // ============================================================================
 function renderServices() {
   const grid = document.getElementById('services-grid');
@@ -104,28 +104,28 @@ function renderServices() {
   grid.innerHTML = SERVICES.map((service) => {
     const iconSvg = ICONS[service.icon] || ICONS.trees;
     return `
-      <div class="service-card rounded-2xl p-8 flex flex-col justify-between group">
+      <div class="service-card rounded-3xl p-8 flex flex-col justify-between group bg-white border border-[#81C784]/25">
         <div>
           <div class="flex items-center justify-between mb-6">
-            <div class="w-14 h-14 rounded-2xl bg-emerald-900/60 text-gold flex items-center justify-center border border-gold/30 group-hover:scale-110 transition-transform">
+            <div class="w-14 h-14 rounded-2xl bg-[#E8F5E9] text-[#2E7D32] flex items-center justify-center border border-[#81C784]/30 group-hover:scale-110 transition-transform shadow-sm">
               ${iconSvg}
             </div>
-            <span class="px-3 py-1 rounded-full bg-forest-800 text-gold text-xs font-semibold tracking-wide border border-gold/20">
+            <span class="px-3.5 py-1 rounded-full bg-[#E8F5E9] text-[#2E7D32] text-xs font-semibold tracking-wide border border-[#81C784]/30">
               ${service.badge}
             </span>
           </div>
-          <span class="text-xs font-luxury uppercase tracking-widest text-emerald-300 block mb-1">
+          <span class="text-xs font-luxury uppercase tracking-widest text-[#2E7D32] block mb-1.5 font-medium">
             ${service.titleEn}
           </span>
-          <h3 class="text-xl font-bold font-serif text-white mb-3">
+          <h3 class="text-xl font-bold font-serif text-[#1C2D22] mb-3">
             ${service.titleTh}
           </h3>
-          <p class="text-xs sm:text-sm text-stone-300 leading-relaxed font-light mb-6">
+          <p class="text-xs sm:text-sm text-[#4A5D52] leading-relaxed font-light mb-6">
             ${service.shortDesc}
           </p>
-          <div class="space-y-2.5 pt-4 border-t border-white/10 mb-8">
+          <div class="space-y-2.5 pt-4 border-t border-[#81C784]/15 mb-8">
             ${service.features.map(f => `
-              <div class="flex items-start gap-2.5 text-xs text-stone-200">
+              <div class="flex items-start gap-2.5 text-xs text-[#1C2D22]">
                 ${ICONS.check}
                 <span>${f}</span>
               </div>
@@ -133,7 +133,7 @@ function renderServices() {
           </div>
         </div>
         <button 
-          class="btn-select-service w-full py-3 rounded-xl bg-white/10 hover:bg-emerald-700 text-white text-xs font-semibold transition-colors flex items-center justify-center gap-2 border border-white/15"
+          class="btn-select-service w-full py-3.5 rounded-2xl bg-[#E8F5E9] hover:bg-[#4CAF50] text-[#2E7D32] hover:text-white text-xs font-semibold transition-all flex items-center justify-center gap-2 border border-[#81C784]/30 shadow-sm"
           data-service-id="${service.id}"
         >
           <span>ขอใบเสนอราคาบริการนี้</span>
@@ -260,7 +260,7 @@ function renderPortfolio() {
     : PORTFOLIO_PROJECTS.filter(p => p.category === currentFilter);
 
   grid.innerHTML = filtered.map(project => `
-    <article class="portfolio-card bg-white rounded-2xl overflow-hidden border border-forest-100 shadow-sm cursor-pointer group" data-project-id="${project.id}">
+    <article class="portfolio-card bg-white rounded-3xl overflow-hidden border border-[#81C784]/25 shadow-sm cursor-pointer group" data-project-id="${project.id}">
       <div class="relative aspect-[4/3] overflow-hidden bg-stone-100">
         <img 
           src="${project.image}" 
@@ -268,30 +268,30 @@ function renderPortfolio() {
           loading="lazy"
           class="w-full h-full object-cover"
         />
-        <div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-forest-950/80 backdrop-blur-md text-white text-[11px] font-semibold">
+        <div class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full bg-white/95 backdrop-blur-md text-[#2E7D32] border border-[#81C784]/30 text-xs font-semibold shadow-sm">
           ${project.categoryName}
         </div>
-        <div class="absolute inset-0 bg-gradient-to-t from-forest-950/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-          <span class="text-white text-xs font-semibold flex items-center gap-1.5 bg-forest-900/90 px-3.5 py-1.5 rounded-full backdrop-blur-sm">
+        <div class="absolute inset-0 bg-gradient-to-t from-[#1C2D22]/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+          <span class="text-white text-xs font-semibold flex items-center gap-1.5 bg-[#2E7D32]/95 px-4 py-2 rounded-full backdrop-blur-sm shadow-md">
             <span>คลิกดูรายละเอียดโครงการ</span>
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
           </span>
         </div>
       </div>
-      <div class="p-6">
-        <span class="text-xs text-forest-800/70 block mb-1 font-medium">${project.location}</span>
-        <h4 class="text-lg font-bold font-serif text-forest-950 mb-2 group-hover:text-emerald-800 transition-colors">
+      <div class="p-6 sm:p-7">
+        <span class="text-xs text-[#2E7D32] block mb-1 font-medium">${project.location}</span>
+        <h4 class="text-lg font-bold font-serif text-[#1C2D22] mb-2 group-hover:text-[#2E7D32] transition-colors">
           ${project.title}
         </h4>
-        <p class="text-xs text-forest-900/70 line-clamp-2 leading-relaxed font-light mb-4">
+        <p class="text-xs sm:text-sm text-[#4A5D52] line-clamp-2 leading-relaxed font-light mb-4">
           ${project.description}
         </p>
-        <div class="flex items-center justify-between pt-4 border-t border-forest-50 text-xs text-forest-950 font-medium">
+        <div class="flex items-center justify-between pt-4 border-t border-[#81C784]/15 text-xs text-[#1C2D22] font-medium">
           <span class="flex items-center gap-1">
-            <span class="text-forest-800/60">ขนาด:</span> ${project.area}
+            <span class="text-[#758A7E]">ขนาด:</span> ${project.area}
           </span>
           <span class="flex items-center gap-1">
-            <span class="text-forest-800/60">ระยะเวลา:</span> ${project.duration}
+            <span class="text-[#758A7E]">ระยะเวลา:</span> ${project.duration}
           </span>
         </div>
       </div>
@@ -337,30 +337,30 @@ function openProjectLightbox(project) {
 }
 
 // ============================================================================
-// 5. REVIEWS & FAQS
+// 5. REVIEWS & FAQS (Light Luxury Styling)
 // ============================================================================
 function renderReviews() {
   const grid = document.getElementById('reviews-grid');
   if (!grid) return;
 
   grid.innerHTML = REVIEWS.map(rev => `
-    <div class="review-card p-8 rounded-2xl bg-white border border-forest-100 shadow-sm flex flex-col justify-between">
+    <div class="review-card p-8 rounded-3xl bg-white border border-[#81C784]/25 shadow-sm flex flex-col justify-between hover:border-[#4CAF50] transition-all">
       <div>
         <div class="flex items-center gap-1 text-amber-400 mb-4">
           ${Array(rev.rating).fill(`
             <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
           `).join('')}
         </div>
-        <p class="text-sm sm:text-base text-forest-900/85 leading-relaxed italic mb-6 font-light">
+        <p class="text-sm sm:text-base text-[#1C2D22] leading-relaxed italic mb-6 font-light">
           "${rev.text}"
         </p>
       </div>
-      <div class="flex items-center gap-4 pt-6 border-t border-forest-50">
-        <img src="${rev.avatar}" alt="${rev.author}" class="w-12 h-12 rounded-full object-cover border border-forest-100" loading="lazy" />
+      <div class="flex items-center gap-4 pt-6 border-t border-[#81C784]/15">
+        <img src="${rev.avatar}" alt="${rev.author}" class="w-12 h-12 rounded-full object-cover border border-[#81C784]/30" loading="lazy" />
         <div>
-          <h4 class="text-sm font-bold text-forest-950 font-serif">${rev.author}</h4>
-          <p class="text-xs text-forest-800/70">${rev.role} (${rev.location})</p>
-          <span class="inline-block text-[11px] text-emerald-800 font-medium mt-0.5">${rev.projectType}</span>
+          <h4 class="text-sm font-bold text-[#1C2D22] font-serif">${rev.author}</h4>
+          <p class="text-xs text-[#758A7E]">${rev.role} (${rev.location})</p>
+          <span class="inline-block text-[11px] text-[#2E7D32] bg-[#E8F5E9] px-2.5 py-0.5 rounded-full font-medium mt-1 border border-[#81C784]/30">${rev.projectType}</span>
         </div>
       </div>
     </div>
@@ -372,14 +372,14 @@ function renderFAQs() {
   if (!container) return;
 
   container.innerHTML = FAQS.map((faq) => `
-    <div class="faq-item rounded-xl bg-white border border-forest-100 overflow-hidden transition-colors">
-      <button class="faq-toggle w-full p-5 text-left flex items-center justify-between gap-4 font-semibold text-forest-950 text-sm hover:text-emerald-800">
+    <div class="faq-item rounded-2xl bg-white border border-[#81C784]/25 overflow-hidden transition-all shadow-sm">
+      <button class="faq-toggle w-full p-5 text-left flex items-center justify-between gap-4 font-semibold text-[#1C2D22] text-sm hover:text-[#2E7D32] transition-colors">
         <span>${faq.q}</span>
-        <svg class="faq-icon w-5 h-5 text-emerald-800 transition-transform duration-200 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+        <svg class="faq-icon w-5 h-5 text-[#2E7D32] transition-transform duration-200 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
         </svg>
       </button>
-      <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-forest-900/70 leading-relaxed border-t border-forest-50/60 pt-3">
+      <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-[#4A5D52] leading-relaxed border-t border-[#81C784]/15 pt-3">
         ${faq.a}
       </div>
     </div>
@@ -482,12 +482,14 @@ function initNavigation() {
   const navLinks = document.querySelectorAll('.nav-link');
   const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
-  // Sticky header shadow
+  // Sticky luxury header transition
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 20) {
-      header?.classList.add('shadow-md');
+    if (window.scrollY > 40) {
+      header?.classList.add('header-luxury-scrolled');
+      header?.classList.remove('header-luxury-top');
     } else {
-      header?.classList.remove('shadow-md');
+      header?.classList.remove('header-luxury-scrolled');
+      header?.classList.add('header-luxury-top');
     }
   });
 
